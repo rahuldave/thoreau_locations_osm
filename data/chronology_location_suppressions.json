@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "suppressions": [
+    { "public_event_id": "alcott-3", "place_id": "concord_lyceum", "reason": "Book chapter title contains Lyceum, but event location is Temple School." },
+    { "public_event_id": "alcott-4", "place_id": "concord_lyceum", "reason": "Book chapter title contains Lyceum, but event location is Temple School." },
+    { "public_event_id": "alcott-5", "place_id": "concord_lyceum", "reason": "Book chapter title contains Lyceum, but event location is Temple School." },
+    { "public_event_id": "alcott-6", "place_id": "concord_lyceum", "reason": "Transcendentalist-circle event has no specific Lyceum location." },
+    { "public_event_id": "alcott-7", "place_id": "concord_lyceum", "reason": "Move-to-Concord event has no specific Lyceum location." },
+    { "public_event_id": "alcott-8", "place_id": "concord_lyceum", "reason": "Book chapter title contains Lyceum, but event location is Fruitlands." },
+    { "public_event_id": "alcott-11", "place_id": "concord_lyceum", "reason": "Origin dinner belongs to Sanborn house candidate, not Lyceum." },
+    { "public_event_id": "alcott-13", "place_id": "concord_lyceum", "reason": "Darwin argument is in Emerson's parlor, not Lyceum." },
+    { "public_event_id": "alcott-18", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Voting event is not a cemetery event." },
+    { "public_event_id": "alcott-19", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Illness event is not a cemetery event." },
+    { "public_event_id": "brace-11", "place_id": "childrens_aid_society_nyc", "reason": "Dutch Hill event is not the Children's Aid Society site." },
+    { "public_event_id": "brace-16", "place_id": "down_house", "reason": "Publication event is not at Down House." },
+    { "public_event_id": "brace-17", "place_id": "down_house", "reason": "New York draft-riot event is not at Down House." },
+    { "public_event_id": "brace-18", "place_id": "down_house", "reason": "Letter event is not at Down House." },
+    { "public_event_id": "brace-19", "place_id": "down_house", "reason": "Publication/review event is not at Down House." },
+    { "public_event_id": "brace-22", "place_id": "childrens_aid_society_nyc", "reason": "Death event has no Children's Aid Society site claim." },
+    { "public_event_id": "emerson-17", "place_id": "concord_lyceum", "reason": "Book-acquisition event is not Lyceum." },
+    { "public_event_id": "emerson-23", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Death/eulogy event is not being treated as a cemetery-site event yet." },
+    { "public_event_id": "emerson-29", "place_id": "down_house", "reason": "Emerson death event is not at Down House." },
+    { "public_event_id": "sanborn-10", "place_id": "concord_lyceum", "reason": "Origin dinner belongs to Sanborn house candidate, not Lyceum." },
+    { "public_event_id": "sanborn-19", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Election-crisis event is not a cemetery event." },
+    { "public_event_id": "thoreau-18", "place_id": "concord_lyceum", "reason": "Book-borrowing event belongs to Concord library." },
+    { "public_event_id": "thoreau-27", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Tree-ring observations are not cemetery-specific." },
+    { "public_event_id": "thoreau-28", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Beck Stow farm observations are not cemetery-specific." },
+    { "public_event_id": "thoreau-29", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Voting event is not a cemetery event." },
+    { "public_event_id": "thoreau-30", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Illness event is not a cemetery event." },
+    { "public_event_id": "thoreau-31", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Secession/illness context is not a cemetery event." },
+    { "public_event_id": "thoreau-32", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Forest-succession thought event is not cemetery-specific." },
+    { "public_event_id": "thoreau-33", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Milwaukee travel event is not a cemetery event." },
+    { "public_event_id": "thoreau-34", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Paper-arranging illness event is not a cemetery event." }
+  ]
+}
+

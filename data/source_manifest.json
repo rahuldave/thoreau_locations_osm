@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_key": "fuller_book_changed_america",
+      "title": "The Book That Changed America: How Darwin's Theory of Evolution Ignited a Nation",
+      "author": "Randall Fuller",
+      "close_reading_book_id": 125,
+      "place_seed": "data/fuller_place_seed.json",
+      "catalog": "data/fuller_place_catalog.json",
+      "mention_csv": "data/fuller_place_mentions.csv",
+      "chronology_event_csv": "data/fuller_place_chronology_events.csv",
+      "review_page": "fuller_location_atlas.html",
+      "status": "pilot"
+    }
+  ],
+  "future_source_pattern": {
+    "place_seed": "data/<source_key>_place_seed.json",
+    "catalog": "data/<source_key>_place_catalog.json",
+    "mention_csv": "data/<source_key>_place_mentions.csv",
+    "review_page": "<source_key>_location_atlas.html"
+  }
+}

@@ -4,9 +4,9 @@ This workspace catalogs places mentioned in books by Henry David Thoreau and
 in Thoreau biographies. The pilot source is Randall Fuller's *The Book That
 Changed America: How Darwin's Theory of Evolution Ignited a Nation*.
 
-The folder sits beside `thoreau_biographies_chronology/` because this is a
-research/export workspace, not app code. The chronology Markdown remains useful
-context, but this workspace treats places as the primary unit.
+The repository sits beside `thoreau_biographies_chronology/` because this is a
+research/export site, not app code. The chronology Markdown remains useful
+context, but this repo treats places as the primary unit.
 
 Public site:
 
@@ -30,6 +30,12 @@ Public site:
 - Old-map control points: `data/georeference_control_points.json`.
 - Current survival/visitability register: `data/visitability_sources.json`.
 - Seed gazetteer/review queue: `data/fuller_place_seed.json`.
+- Source manifest for future books: `data/source_manifest.json`.
+- Chronology-to-location suppressions and overrides:
+  `data/chronology_location_suppressions.json` and
+  `data/chronology_location_overrides.json`.
+- Generated chronology-to-location links:
+  `data/chronology_location_links.json`.
 
 The current Fuller pilot seed file contains 69 places, but the generated atlas
 shows only the 39 site-level records. It suppresses broad context rows such as
@@ -136,6 +142,17 @@ Rebuild the catalog and HTML:
 python3 thoreau_locations_osm/scripts/build_fuller_atlas.py
 ```
 
+Rebuild the exhaustive chronology-to-location link rules after changing the
+catalog, suppressions, or overrides:
+
+```bash
+python3 thoreau_locations_osm/scripts/build_chronology_location_links.py
+```
+
+That writes `data/chronology_location_links.json` here and refreshes the sibling
+`../thoreau_biographies_chronology/location_anchor_rules.json` file consumed by
+the chronology site generator.
+
 Open the interface locally:
 
 ```bash
@@ -146,9 +163,11 @@ open thoreau_locations_osm/index.html
 
 After the Fuller interface feels right, expand in this order:
 
-1. Add source manifests for Thoreau's own works from `thoreau_complete_works_books/`.
-2. Add the major Thoreau biographies from `thoreau_biographies/`.
-3. Promote recurring places into a shared place authority file.
+1. Add another entry to `data/source_manifest.json`.
+2. Create that source's seed file using the pattern in
+   `data/source_manifest.json`.
+3. Reuse the Fuller build script shape for a source-specific catalog and review
+   page, then promote repeated places into a shared place authority file.
 4. Add source-specific mention tables so the same place can show its route
    across Thoreau's writings, biographies, and historical maps.
 5. Add a reviewed export for accepted OSM/Wikidata candidates and unresolved

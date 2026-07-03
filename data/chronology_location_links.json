@@ -1,0 +1,721 @@
+{
+  "schema_version": 1,
+  "generated_from": "thoreau_locations_osm/data/fuller_place_catalog.json",
+  "atlas_base_url": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html",
+  "counts": {
+    "events": 87,
+    "links": 89,
+    "suppressions": 30,
+    "overrides": 46
+  },
+  "events": {
+    "alcott-11": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "alcott-12": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "auto"
+      }
+    ],
+    "alcott-13": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "alcott-14": [
+      {
+        "place_id": "parker_house_boston",
+        "label": "Parker House hotel / Saturday Club dining room",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=parker_house_boston",
+        "source": "auto"
+      }
+    ],
+    "alcott-15": [
+      {
+        "place_id": "orchard_house",
+        "label": "Orchard House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=orchard_house",
+        "source": "auto"
+      }
+    ],
+    "alcott-17": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "alcott-23": [
+      {
+        "place_id": "concord_school_of_philosophy",
+        "label": "Concord School of Philosophy",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_school_of_philosophy",
+        "source": "auto"
+      }
+    ],
+    "alcott-24": [
+      {
+        "place_id": "concord_school_of_philosophy",
+        "label": "Concord School of Philosophy",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_school_of_philosophy",
+        "source": "auto"
+      },
+      {
+        "place_id": "orchard_house",
+        "label": "Orchard House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=orchard_house",
+        "source": "auto"
+      }
+    ],
+    "alcott-25": [
+      {
+        "place_id": "concord_school_of_philosophy",
+        "label": "Concord School of Philosophy",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_school_of_philosophy",
+        "source": "auto"
+      },
+      {
+        "place_id": "hillside_chapel",
+        "label": "Hillside Chapel",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=hillside_chapel",
+        "source": "auto"
+      }
+    ],
+    "alcott-3": [
+      {
+        "place_id": "temple_school_boston",
+        "label": "Temple School, Boston",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=temple_school_boston",
+        "source": "auto"
+      }
+    ],
+    "alcott-4": [
+      {
+        "place_id": "temple_school_boston",
+        "label": "Temple School, Boston",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=temple_school_boston",
+        "source": "auto"
+      }
+    ],
+    "alcott-5": [
+      {
+        "place_id": "temple_school_boston",
+        "label": "Temple School, Boston",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=temple_school_boston",
+        "source": "auto"
+      }
+    ],
+    "alcott-8": [
+      {
+        "place_id": "fruitlands",
+        "label": "Fruitlands",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=fruitlands",
+        "source": "auto"
+      }
+    ],
+    "book-19": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "book-34": [
+      {
+        "place_id": "cambridge_scientific_society",
+        "label": "Cambridge Scientific Society / American Academy meetings",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=cambridge_scientific_society",
+        "source": "override"
+      }
+    ],
+    "book-36": [
+      {
+        "place_id": "cambridge_scientific_society",
+        "label": "Cambridge Scientific Society / American Academy meetings",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=cambridge_scientific_society",
+        "source": "override"
+      }
+    ],
+    "book-42": [
+      {
+        "place_id": "john_murray_london",
+        "label": "John Murray publisher, London",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=john_murray_london",
+        "source": "override"
+      }
+    ],
+    "book-45": [
+      {
+        "place_id": "asa_gray_house",
+        "label": "Asa Gray House / Harvard botany setting",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=asa_gray_house",
+        "source": "override"
+      }
+    ],
+    "book-46": [
+      {
+        "place_id": "harvard_university",
+        "label": "Harvard University / Harvard College",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=harvard_university",
+        "source": "override"
+      }
+    ],
+    "book-48": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "book-53": [
+      {
+        "place_id": "barnums_american_museum",
+        "label": "Barnum's American Museum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=barnums_american_museum",
+        "source": "override"
+      }
+    ],
+    "book-57": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "book-58": [
+      {
+        "place_id": "concord_library",
+        "label": "Concord library",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_library",
+        "source": "override"
+      }
+    ],
+    "book-64": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "book-69": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "book-70": [
+      {
+        "place_id": "boston_court_house",
+        "label": "Boston Court House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=boston_court_house",
+        "source": "override"
+      }
+    ],
+    "book-71": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "book-72": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "book-76": [
+      {
+        "place_id": "orchard_house",
+        "label": "Orchard House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=orchard_house",
+        "source": "override"
+      }
+    ],
+    "book-78": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "book-79": [
+      {
+        "place_id": "north_elba_john_brown_farm",
+        "label": "North Elba / John Brown Farm",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=north_elba_john_brown_farm",
+        "source": "override"
+      }
+    ],
+    "book-81": [
+      {
+        "place_id": "down_house",
+        "label": "Down House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=down_house",
+        "source": "override"
+      }
+    ],
+    "book-85": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "book-88": [
+      {
+        "place_id": "middlesex_agricultural_society",
+        "label": "Middlesex Agricultural Society fair and exhibition hall",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=middlesex_agricultural_society",
+        "source": "override"
+      }
+    ],
+    "brace-20": [
+      {
+        "place_id": "childrens_aid_society_nyc",
+        "label": "Children's Aid Society, New York",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=childrens_aid_society_nyc",
+        "source": "auto"
+      }
+    ],
+    "brace-21": [
+      {
+        "place_id": "down_house",
+        "label": "Down House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=down_house",
+        "source": "auto"
+      }
+    ],
+    "brace-5": [
+      {
+        "place_id": "childrens_aid_society_nyc",
+        "label": "Children's Aid Society, New York",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=childrens_aid_society_nyc",
+        "source": "auto"
+      }
+    ],
+    "brace-7": [
+      {
+        "place_id": "childrens_aid_society_nyc",
+        "label": "Children's Aid Society, New York",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=childrens_aid_society_nyc",
+        "source": "auto"
+      }
+    ],
+    "brace-8": [
+      {
+        "place_id": "childrens_aid_society_nyc",
+        "label": "Children's Aid Society, New York",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=childrens_aid_society_nyc",
+        "source": "auto"
+      }
+    ],
+    "brace-9": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-15": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-19": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-20": [
+      {
+        "place_id": "concord_library",
+        "label": "Concord library",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_library",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-22": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-23": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-24": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-25": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-27": [
+      {
+        "place_id": "north_elba_john_brown_farm",
+        "label": "North Elba / John Brown Farm",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=north_elba_john_brown_farm",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-3": [
+      {
+        "place_id": "cambridge_scientific_society",
+        "label": "Cambridge Scientific Society / American Academy meetings",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=cambridge_scientific_society",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-31": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-33": [
+      {
+        "place_id": "middlesex_agricultural_society",
+        "label": "Middlesex Agricultural Society fair and exhibition hall",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=middlesex_agricultural_society",
+        "source": "override"
+      }
+    ],
+    "crisis-1858-1862-4": [
+      {
+        "place_id": "cambridge_scientific_society",
+        "label": "Cambridge Scientific Society / American Academy meetings",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=cambridge_scientific_society",
+        "source": "override"
+      }
+    ],
+    "emerson-12": [
+      {
+        "place_id": "harvard_divinity_school",
+        "label": "Harvard Divinity School / Divinity School Address venue",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=harvard_divinity_school",
+        "source": "auto"
+      }
+    ],
+    "emerson-15": [
+      {
+        "place_id": "walden_pond",
+        "label": "Walden Pond",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=walden_pond",
+        "source": "auto"
+      }
+    ],
+    "emerson-17": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "emerson-19": [
+      {
+        "place_id": "parker_house_boston",
+        "label": "Parker House hotel / Saturday Club dining room",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=parker_house_boston",
+        "source": "auto"
+      }
+    ],
+    "emerson-2": [
+      {
+        "place_id": "harvard_university",
+        "label": "Harvard University / Harvard College",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=harvard_university",
+        "source": "auto"
+      }
+    ],
+    "emerson-20": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "emerson-21": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "auto"
+      }
+    ],
+    "emerson-22": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "emerson-26": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "override"
+      }
+    ],
+    "emerson-27": [
+      {
+        "place_id": "concord_school_of_philosophy",
+        "label": "Concord School of Philosophy",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_school_of_philosophy",
+        "source": "auto"
+      }
+    ],
+    "emerson-3": [
+      {
+        "place_id": "harvard_university",
+        "label": "Harvard University / Harvard College",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=harvard_university",
+        "source": "auto"
+      }
+    ],
+    "emerson-4": [
+      {
+        "place_id": "second_church_boston",
+        "label": "Boston's Second Church",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=second_church_boston",
+        "source": "auto"
+      }
+    ],
+    "emerson-7": [
+      {
+        "place_id": "jardin_des_plantes",
+        "label": "Jardin des Plantes, Paris",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=jardin_des_plantes",
+        "source": "auto"
+      }
+    ],
+    "sanborn-10": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "sanborn-13": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "auto"
+      }
+    ],
+    "sanborn-15": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "sanborn-16": [
+      {
+        "place_id": "boston_court_house",
+        "label": "Boston Court House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=boston_court_house",
+        "source": "override"
+      }
+    ],
+    "sanborn-17": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "auto"
+      }
+    ],
+    "sanborn-2": [
+      {
+        "place_id": "sanborn_private_school",
+        "label": "Franklin Sanborn's private school in Concord",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_private_school",
+        "source": "auto"
+      }
+    ],
+    "sanborn-23": [
+      {
+        "place_id": "concord_school_of_philosophy",
+        "label": "Concord School of Philosophy",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_school_of_philosophy",
+        "source": "auto"
+      }
+    ],
+    "sanborn-24": [
+      {
+        "place_id": "concord_school_of_philosophy",
+        "label": "Concord School of Philosophy",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_school_of_philosophy",
+        "source": "auto"
+      }
+    ],
+    "thoreau-11": [
+      {
+        "place_id": "walden_pond",
+        "label": "Walden Pond",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=walden_pond",
+        "source": "auto"
+      }
+    ],
+    "thoreau-17": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "override"
+      }
+    ],
+    "thoreau-18": [
+      {
+        "place_id": "concord_library",
+        "label": "Concord library",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_library",
+        "source": "auto"
+      }
+    ],
+    "thoreau-19": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "auto"
+      }
+    ],
+    "thoreau-2": [
+      {
+        "place_id": "harvard_university",
+        "label": "Harvard University / Harvard College",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=harvard_university",
+        "source": "auto"
+      }
+    ],
+    "thoreau-20": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "override"
+      }
+    ],
+    "thoreau-22": [
+      {
+        "place_id": "sanborn_house_sudbury_road",
+        "label": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sanborn_house_sudbury_road",
+        "source": "auto"
+      }
+    ],
+    "thoreau-23": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "auto"
+      }
+    ],
+    "thoreau-24": [
+      {
+        "place_id": "north_elba_john_brown_farm",
+        "label": "North Elba / John Brown Farm",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=north_elba_john_brown_farm",
+        "source": "auto"
+      }
+    ],
+    "thoreau-25": [
+      {
+        "place_id": "middlesex_agricultural_society",
+        "label": "Middlesex Agricultural Society fair and exhibition hall",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=middlesex_agricultural_society",
+        "source": "auto"
+      }
+    ],
+    "thoreau-3": [
+      {
+        "place_id": "emerson_house_concord",
+        "label": "Ralph Waldo Emerson House",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=emerson_house_concord",
+        "source": "auto"
+      }
+    ],
+    "thoreau-35": [
+      {
+        "place_id": "sleepy_hollow_cemetery_concord",
+        "label": "Sleepy Hollow Cemetery, Concord",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sleepy_hollow_cemetery_concord",
+        "source": "auto"
+      }
+    ],
+    "thoreau-5": [
+      {
+        "place_id": "walden_pond",
+        "label": "Walden Pond",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=walden_pond",
+        "source": "auto"
+      }
+    ],
+    "thoreau-7": [
+      {
+        "place_id": "concord_lyceum",
+        "label": "Concord Town House / Concord Lyceum",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
+        "source": "auto"
+      }
+    ]
+  }
+}

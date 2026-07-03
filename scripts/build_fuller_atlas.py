@@ -28,6 +28,7 @@ OLD_MAP_HTML_PATH = ROOT / "old_map_georeference.html"
 INDEX_PATH = ROOT / "index.html"
 CLOSE_READING_CHAPTER_BASE = "https://closereading.rahuldave.us/books/{book_id}/chapters/{chapter_id}#cell-{cell_index}"
 PUBLIC_CHRONOLOGY_BASE = "https://rahuldave.com/thoreau_biographies_chronology/aligned_chronologies.html"
+PUBLIC_ATLAS_BASE = "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html"
 
 CHRONOLOGY_EVENT_FILES = [
     "thoreau_chronology.md",
@@ -387,6 +388,10 @@ def google_maps_url(place: dict, osm_result: dict | None, address: str | None) -
     return f"https://www.google.com/maps/search/?api=1&query={quote_plus(address or place['osm_query'])}"
 
 
+def public_atlas_url(place: dict) -> str:
+    return f"{PUBLIC_ATLAS_BASE}?place={quote_plus(place['id'])}"
+
+
 def is_catalog_place(place: dict) -> bool:
     if place.get("catalog_scope") == "context_only":
         return False
@@ -464,6 +469,7 @@ def enrich(seed: dict, max_examples: int) -> list[dict]:
                 **place,
                 "current_address": address,
                 "google_maps_url": google_maps_url(place, result, address),
+                "public_atlas_url": public_atlas_url(place),
                 "book_mention_count": mention_count,
                 "book_citation_count": len(examples),
                 "chronology_mention_count": chronology_count,
@@ -1203,6 +1209,7 @@ def write_html(catalog: dict) -> None:
         </div>
         <div class="actions">
           <a class="action" href="${{osmLink}}" target="_blank" rel="noreferrer">${{osmLabel}}</a>
+          <a class="action secondary" href="${{place.public_atlas_url}}" target="_blank" rel="noreferrer">Public atlas link</a>
           <a class="action secondary" href="${{place.google_maps_url}}" target="_blank" rel="noreferrer">Open in Google Maps</a>
           <a class="action secondary" href="${{oldMapLink}}" target="_blank" rel="noreferrer">Old map page</a>
           <a class="action secondary" href="https://www.loc.gov/item/2012593522/" target="_blank" rel="noreferrer">1852 Concord map</a>
