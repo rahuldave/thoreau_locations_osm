@@ -1359,11 +1359,23 @@ def write_old_map_html(catalog: dict) -> None:
       margin: 10px 0;
       background: #fffaf0;
       border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: background 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+    }}
+    .point:hover,
+    .point:focus {{
+      outline: 0;
+      box-shadow: inset 0 0 0 1px #d6c486;
     }}
     .point.active {{
       border-left-color: #d12f7a;
       background: #fff2f7;
       box-shadow: inset 0 0 0 1px #efbad0;
+    }}
+    .point.unmapped {{
+      cursor: default;
+      border-left-color: #d3a2b6;
+      background: #fff8fb;
     }}
     .oldmap-legend {{
       position: absolute;
@@ -1428,14 +1440,10 @@ def write_old_map_html(catalog: dict) -> None:
     const points = georef.control_points || [];
     const names = payload.place_names || {{}};
     const currentPlaceId = new URLSearchParams(window.location.search).get("place");
-    const currentPlaceName = names[currentPlaceId];
+    const state = {{
+      selectedPlaceId: currentPlaceId || null
+    }};
     const selectedNote = document.getElementById("selected-place-note");
-    if (currentPlaceId) {{
-      document.getElementById("atlas-back").href = `fuller_location_atlas.html?place=${{encodeURIComponent(currentPlaceId)}}`;
-      selectedNote.textContent = currentPlaceName
-        ? `Current atlas place: ${{currentPlaceName}}`
-        : `Current atlas place id: ${{currentPlaceId}}`;
-    }}
     const size = oldMap.local_reference_image_size || {{ width: 2354, height: 1863 }};
     const bounds = [[0, 0], [size.height, size.width]];
     const map = L.map("old-map", {{
@@ -1447,29 +1455,123 @@ def write_old_map_html(catalog: dict) -> None:
     L.imageOverlay(oldMap.local_reference_image || "maps/loc_concord_1852_walling_pct25.jpg", bounds).addTo(map);
     map.fitBounds(bounds);
     const list = document.getElementById("point-list");
-    let selectedPoint = null;
+    const entries = [];
+    let unmappedItem = null;
+
+    const legend = L.control({{ position: "bottomright" }});
+    legend.onAdd = () => {{
+      const div = L.DomUtil.create("div", "oldmap-legend");
+      div.innerHTML = '<span class="legend-dot"></span>selected/current place';
+      return div;
+    }};
+    legend.addTo(map);
+
+    function pointStyle(selected = false) {{
+      if (selected) {{
+        return {{
+          radius: 12,
+          color: "#4a1430",
+          weight: 4,
+          fillColor: "#d12f7a",
+          fillOpacity: 0.96
+        }};
+      }}
+      return {{
+        radius: 7,
+        color: "#6d4d00",
+        weight: 2,
+        fillColor: "#ffcf58",
+        fillOpacity: 0.9
+      }};
+    }}
+
+    function updateSelectedNote() {{
+      const selectedId = state.selectedPlaceId;
+      const name = names[selectedId];
+      const atlasBack = document.getElementById("atlas-back");
+      if (selectedId) {{
+        atlasBack.href = `fuller_location_atlas.html?place=${{encodeURIComponent(selectedId)}}`;
+        selectedNote.textContent = name
+          ? `Current atlas place: ${{name}}`
+          : `Current atlas place id: ${{selectedId}}`;
+      }} else {{
+        atlasBack.href = "fuller_location_atlas.html";
+        selectedNote.textContent = "Click a draft anchor to mark it as the current old-map place.";
+      }}
+    }}
+
+    function updateUrl() {{
+      const url = new URL(window.location.href);
+      if (state.selectedPlaceId) {{
+        url.searchParams.set("place", state.selectedPlaceId);
+      }} else {{
+        url.searchParams.delete("place");
+      }}
+      window.history.replaceState({{}}, "", url);
+    }}
+
+    function renderUnmappedNotice() {{
+      if (unmappedItem) {{
+        unmappedItem.remove();
+        unmappedItem = null;
+      }}
+      if (!state.selectedPlaceId) return;
+      const hasPoint = entries.some((entry) => entry.point.place_id === state.selectedPlaceId);
+      if (hasPoint) return;
+      unmappedItem = document.createElement("div");
+      unmappedItem.className = "point active unmapped";
+      unmappedItem.innerHTML = `
+        <strong>${{names[state.selectedPlaceId] || state.selectedPlaceId}}</strong>
+        <div class="subtle">No old-map control point has been attached to this atlas place yet.</div>
+      `;
+      list.prepend(unmappedItem);
+    }}
+
+    function updateSelection({{ moveMap = false, replaceUrl = false }} = {{}}) {{
+      updateSelectedNote();
+      let selectedEntry = null;
+      for (const entry of entries) {{
+        const selected = entry.point.place_id === state.selectedPlaceId;
+        entry.marker.setStyle(pointStyle(selected));
+        entry.item.className = "point" + (selected ? " active" : "");
+        entry.item.setAttribute("aria-pressed", selected ? "true" : "false");
+        if (selected) {{
+          entry.marker.bringToFront();
+          selectedEntry = entry;
+        }}
+      }}
+      renderUnmappedNotice();
+      if (replaceUrl) updateUrl();
+      if (selectedEntry && moveMap) {{
+        map.setView(selectedEntry.latlng, 0);
+        selectedEntry.marker.openPopup();
+      }}
+    }}
+
+    function selectPlaceOnOldMap(placeId, moveMap = false, replaceUrl = true) {{
+      state.selectedPlaceId = placeId;
+      updateSelection({{ moveMap, replaceUrl }});
+    }}
+
     for (const point of points) {{
       const y = Number(point.old_map_pixel?.y);
       const x = Number(point.old_map_pixel?.x);
       if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
-      const selected = point.place_id === currentPlaceId;
       const title = names[point.place_id] || point.label || point.place_id;
       const atlasUrl = `fuller_location_atlas.html?place=${{encodeURIComponent(point.place_id)}}`;
-      L.circleMarker([y, x], {{
-        radius: selected ? 12 : 7,
-        color: selected ? "#4a1430" : "#6d4d00",
-        weight: selected ? 4 : 2,
-        fillColor: selected ? "#d12f7a" : "#ffcf58",
-        fillOpacity: selected ? 0.96 : 0.9
-      }}).addTo(map).bindPopup(`
+      const latlng = [y, x];
+      const marker = L.circleMarker(latlng, pointStyle(false)).addTo(map).bindPopup(`
         <strong>${{title}}</strong><br>
         Old-map pixel: <code>${{x}}, ${{y}}</code><br>
         Modern WGS84: <code>${{point.modern_wgs84?.lat}}, ${{point.modern_wgs84?.lon}}</code><br>
         <a href="${{atlasUrl}}">Open atlas place</a>
       `);
-      if (selected) selectedPoint = [y, x];
+      marker.on("click", () => selectPlaceOnOldMap(point.place_id, false, true));
       const item = document.createElement("div");
-      item.className = "point" + (selected ? " active" : "");
+      item.className = "point";
+      item.setAttribute("role", "button");
+      item.setAttribute("tabindex", "0");
+      item.setAttribute("aria-pressed", "false");
       item.innerHTML = `
         <strong>${{title}}</strong>
         <div>Old-map pixel: <code>${{x}}, ${{y}}</code></div>
@@ -1477,28 +1579,17 @@ def write_old_map_html(catalog: dict) -> None:
         <div class="subtle">${{point.note || ""}}</div>
         <div><a href="${{atlasUrl}}">Open atlas place</a></div>
       `;
-      item.addEventListener("click", () => map.setView([y, x], 0));
+      item.addEventListener("click", () => selectPlaceOnOldMap(point.place_id, true, true));
+      item.addEventListener("keydown", (event) => {{
+        if (event.key === "Enter" || event.key === " ") {{
+          event.preventDefault();
+          selectPlaceOnOldMap(point.place_id, true, true);
+        }}
+      }});
       list.appendChild(item);
+      entries.push({{ point, marker, item, latlng }});
     }}
-    if (currentPlaceId && !selectedPoint) {{
-      const item = document.createElement("div");
-      item.className = "point active";
-      item.innerHTML = `
-        <strong>${{currentPlaceName || currentPlaceId}}</strong>
-        <div class="subtle">No old-map control point has been attached to this atlas place yet.</div>
-      `;
-      list.prepend(item);
-    }}
-    if (selectedPoint) {{
-      const legend = L.control({{ position: "bottomright" }});
-      legend.onAdd = () => {{
-        const div = L.DomUtil.create("div", "oldmap-legend");
-        div.innerHTML = '<span class="legend-dot"></span>current place';
-        return div;
-      }};
-      legend.addTo(map);
-      map.setView(selectedPoint, 0);
-    }}
+    updateSelection({{ moveMap: Boolean(state.selectedPlaceId) }});
   </script>
 </body>
 </html>
