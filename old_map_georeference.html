@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1852 Concord Old-Map Anchors</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #5b626a;
+      --line: #d9ded7;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --green: #2f6f5e;
+      --blue: #315f8f;
+      --gold: #a97822;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--line);
+      background: #f6f2ea;
+    }
+    h1 { margin: 0 0 4px; font-size: 23px; letter-spacing: 0; }
+    a { color: var(--blue); font-weight: 650; text-decoration: none; }
+    .subtle { color: var(--muted); }
+    main {
+      display: grid;
+      grid-template-columns: minmax(320px, 390px) 1fr;
+      min-height: calc(100vh - 82px);
+    }
+    aside {
+      padding: 16px;
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      overflow: auto;
+    }
+    #old-map { min-height: calc(100vh - 82px); background: #e8e0d0; }
+    .point {
+      border-left: 3px solid #bda14d;
+      padding: 9px 10px;
+      margin: 10px 0;
+      background: #fffaf0;
+      border-radius: 0 6px 6px 0;
+    }
+    .point.active {
+      border-left-color: #d12f7a;
+      background: #fff2f7;
+      box-shadow: inset 0 0 0 1px #efbad0;
+    }
+    .oldmap-legend {
+      position: absolute;
+      z-index: 500;
+      right: 12px;
+      bottom: 16px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 8px;
+      color: var(--muted);
+      font-size: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+    .legend-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      margin-right: 5px;
+      background: #d12f7a;
+      border: 2px solid #4a1430;
+      vertical-align: -1px;
+    }
+    code {
+      background: #f0eee8;
+      border: 1px solid #e2ddd1;
+      border-radius: 4px;
+      padding: 1px 4px;
+    }
+    @media (max-width: 860px) {
+      header { display: block; }
+      main { grid-template-columns: 1fr; }
+      aside { border-right: 0; border-bottom: 1px solid var(--line); }
+      #old-map { min-height: 72vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>1852 Concord Old-Map Anchors</h1>
+      <div class="subtle">Draft control points on H. F. Walling's 1852 Concord map. This is not a finished geo-rectification.</div>
+    </div>
+    <div><a id="atlas-back" href="fuller_location_atlas.html">Back to atlas</a></div>
+  </header>
+  <main>
+    <aside>
+      <h2>Draft Anchors</h2>
+      <p class="subtle">These are the old-map pixels currently identified by visual inspection. The next pass should geo-rectify the map and check residual error before house-level claims.</p>
+      <p id="selected-place-note" class="subtle"></p>
+      <div id="point-list"></div>
+    </aside>
+    <div id="old-map"></div>
+  </main>
+  <script id="old-map-data" type="application/json">{"georeference": {"schema_version": 1, "status": "draft", "purpose": "Control points for georeferencing H. F. Walling's 1852 Concord map against modern WGS84 coordinates before accepting precise historical-site locations.", "old_map": {"id": "loc-concord-1852-walling", "title": "Map of the town of Concord, Middlesex County Mass", "url": "https://www.loc.gov/item/2012593522/", "resource_url": "https://www.loc.gov/resource/g3764c.ct001110/", "local_reference_image": "maps/loc_concord_1852_walling_pct25.jpg", "local_reference_image_size": {"width": 2354, "height": 1863}, "note": "Pixel coordinates refer to the local 25% LOC JPEG. They are manual draft picks from visual inspection, not a finished georectification."}, "control_points": [{"id": "cp_concord_village_center", "place_id": "concord_lyceum", "label": "Concord village center / Town House vicinity", "old_map_pixel": {"x": 1115, "y": 972, "uncertainty_px": 45}, "modern_wgs84": {"lat": 42.46024, "lon": -71.34968}, "modern_source": "Existing atlas Concord Town House candidate; still needs archival confirmation for Lyceum/Town House identity.", "note": "Useful town-center anchor, but refine against the village inset or a named building before using for house-level locations."}, {"id": "cp_walden_pond", "place_id": "walden_pond", "label": "Walden Pond center", "old_map_pixel": {"x": 1238, "y": 1292, "uncertainty_px": 30}, "modern_wgs84": {"lat": 42.43893, "lon": -71.34062}, "modern_source": "OpenStreetMap/Nominatim Walden Pond candidate cached in the atlas.", "note": "Stable natural-feature control point; use pond outline, not the label, when refining."}, {"id": "cp_white_pond", "place_id": "white_pond", "label": "White Pond center", "old_map_pixel": {"x": 811, "y": 1586, "uncertainty_px": 35}, "modern_wgs84": {"lat": 42.4275253, "lon": -71.3912626}, "modern_source": "OpenStreetMap/Nominatim relation 12199907, checked 2026-07-02.", "note": "Stable natural-feature control point; useful because it is far from Walden and the village center."}, {"id": "cp_old_north_bridge", "place_id": "old_north_bridge", "label": "Old North Bridge", "old_map_pixel": {"x": 1118, "y": 837, "uncertainty_px": 55}, "modern_wgs84": {"lat": 42.4690379, "lon": -71.3506223}, "modern_source": "OpenStreetMap/Nominatim Old North Bridge candidate, checked 2026-07-02.", "note": "Additional check point north of the village. The bridge point is harder to read on the 25% image and should be refined from a higher-resolution image."}], "next_steps": ["Refine each old-map pixel against a higher-resolution crop and record the exact landmark used.", "Use at least three non-collinear accepted control points to compute an affine or thin-plate-spline transform.", "Check residual error before using the transform for Sanborn's house, Thoreau's Main Street house, Lyceum/Town House scenes, or other house-level claims."]}, "place_names": {"thoreau_main_street_home": "Thoreau family house on Main Street", "sanborn_house_sudbury_road": "Franklin Sanborn / Channing-Fuller-Sanborn house candidate", "concord_lyceum": "Concord Town House / Concord Lyceum", "walden_cabin_site": "Thoreau cabin site at Walden Pond", "harvard_university": "Harvard University / Harvard College", "walden_pond": "Walden Pond", "down_house": "Down House", "emerson_house_concord": "Ralph Waldo Emerson House", "sleepy_hollow_cemetery_concord": "Sleepy Hollow Cemetery, Concord", "childrens_aid_society_nyc": "Children's Aid Society, New York", "asa_gray_house": "Asa Gray House / Harvard botany setting", "middlesex_agricultural_society": "Middlesex Agricultural Society fair and exhibition hall", "temple_school_boston": "Temple School, Boston", "concord_library": "Concord library", "sanborn_private_school": "Franklin Sanborn's private school in Concord", "hillside_chapel": "Hillside Chapel", "boston_court_house": "Boston Court House", "boston_wharf": "Boston Wharf", "emerson_woodlot_walden": "Emerson's woodlot near Walden Pond", "parker_house_boston": "Parker House hotel / Saturday Club dining room", "concord_school_of_philosophy": "Concord School of Philosophy", "barnums_american_museum": "Barnum's American Museum", "john_murray_london": "John Murray publisher, London", "first_church_concord": "First Church in Concord", "fruitlands": "Fruitlands", "north_elba_john_brown_farm": "North Elba / John Brown Farm", "cambridge_scientific_society": "Cambridge Scientific Society / American Academy meetings", "old_hill_burying_ground_concord": "Old Hill Burying Ground / Puritan-era hillside cemetery", "concord_train_station": "Concord train station", "harvard_divinity_school": "Harvard Divinity School / Divinity School Address venue", "second_church_boston": "Boston's Second Church", "first_parish_cambridge": "First Parish in Cambridge / Church Street church", "orchard_house": "Orchard House", "cooper_union": "Cooper Union", "fort_sumter": "Fort Sumter", "the_wayside_concord": "The Wayside", "old_north_bridge": "Old North Bridge", "white_pond": "White Pond", "jardin_des_plantes": "Jardin des Plantes, Paris"}}</script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const payload = JSON.parse(document.getElementById("old-map-data").textContent);
+    const georef = payload.georeference || {};
+    const oldMap = georef.old_map || {};
+    const points = georef.control_points || [];
+    const names = payload.place_names || {};
+    const currentPlaceId = new URLSearchParams(window.location.search).get("place");
+    const currentPlaceName = names[currentPlaceId];
+    const selectedNote = document.getElementById("selected-place-note");
+    if (currentPlaceId) {
+      document.getElementById("atlas-back").href = `fuller_location_atlas.html?place=${encodeURIComponent(currentPlaceId)}`;
+      selectedNote.textContent = currentPlaceName
+        ? `Current atlas place: ${currentPlaceName}`
+        : `Current atlas place id: ${currentPlaceId}`;
+    }
+    const size = oldMap.local_reference_image_size || { width: 2354, height: 1863 };
+    const bounds = [[0, 0], [size.height, size.width]];
+    const map = L.map("old-map", {
+      crs: L.CRS.Simple,
+      minZoom: -4,
+      maxZoom: 3,
+      zoomSnap: 0.25
+    });
+    L.imageOverlay(oldMap.local_reference_image || "maps/loc_concord_1852_walling_pct25.jpg", bounds).addTo(map);
+    map.fitBounds(bounds);
+    const list = document.getElementById("point-list");
+    let selectedPoint = null;
+    for (const point of points) {
+      const y = Number(point.old_map_pixel?.y);
+      const x = Number(point.old_map_pixel?.x);
+      if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
+      const selected = point.place_id === currentPlaceId;
+      const title = names[point.place_id] || point.label || point.place_id;
+      const atlasUrl = `fuller_location_atlas.html?place=${encodeURIComponent(point.place_id)}`;
+      L.circleMarker([y, x], {
+        radius: selected ? 12 : 7,
+        color: selected ? "#4a1430" : "#6d4d00",
+        weight: selected ? 4 : 2,
+        fillColor: selected ? "#d12f7a" : "#ffcf58",
+        fillOpacity: selected ? 0.96 : 0.9
+      }).addTo(map).bindPopup(`
+        <strong>${title}</strong><br>
+        Old-map pixel: <code>${x}, ${y}</code><br>
+        Modern WGS84: <code>${point.modern_wgs84?.lat}, ${point.modern_wgs84?.lon}</code><br>
+        <a href="${atlasUrl}">Open atlas place</a>
+      `);
+      if (selected) selectedPoint = [y, x];
+      const item = document.createElement("div");
+      item.className = "point" + (selected ? " active" : "");
+      item.innerHTML = `
+        <strong>${title}</strong>
+        <div>Old-map pixel: <code>${x}, ${y}</code></div>
+        <div>Modern WGS84: <code>${point.modern_wgs84?.lat}, ${point.modern_wgs84?.lon}</code></div>
+        <div class="subtle">${point.note || ""}</div>
+        <div><a href="${atlasUrl}">Open atlas place</a></div>
+      `;
+      item.addEventListener("click", () => map.setView([y, x], 0));
+      list.appendChild(item);
+    }
+    if (currentPlaceId && !selectedPoint) {
+      const item = document.createElement("div");
+      item.className = "point active";
+      item.innerHTML = `
+        <strong>${currentPlaceName || currentPlaceId}</strong>
+        <div class="subtle">No old-map control point has been attached to this atlas place yet.</div>
+      `;
+      list.prepend(item);
+    }
+    if (selectedPoint) {
+      const legend = L.control({ position: "bottomright" });
+      legend.onAdd = () => {
+        const div = L.DomUtil.create("div", "oldmap-legend");
+        div.innerHTML = '<span class="legend-dot"></span>current place';
+        return div;
+      };
+      legend.addTo(map);
+      map.setView(selectedPoint, 0);
+    }
+  </script>
+</body>
+</html>

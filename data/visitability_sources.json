@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-02",
+  "places": {
+    "sanborn_house_sudbury_road": {
+      "visit_status": "private_residence",
+      "survival_status": "structure_survives_candidate",
+      "visibility": "exterior_from_public_way_only",
+      "visitor_note": "Caldwell identifies the Channing-Fuller-Sanborn / Samuel Jones House at 325 Main Street as the Concord abolitionist and Darwinian landmark connected to Sanborn, Thoreau, and John Brown. Treat it as a private residence: view only from the public way, and confirm the old Sudbury Road/Main Street identity before treating the site as resolved.",
+      "sources": [
+        {
+          "label": "Duncan Caldwell, Saving Concord's Darwinian & Abolitionist landmark",
+          "url": "https://www.duncancaldwell.com/Snippets-Outbursts-Duncans-Blog/Entries/2025/1/saving-concords-darwinian--abolitionist-landmark-where-thoreau-met-john-brown-1.html",
+          "type": "local-history"
+        }
+      ]
+    },
+    "concord_lyceum": {
+      "visit_status": "active_municipal_building",
+      "survival_status": "structure_survives_source_confirmed",
+      "visibility": "exterior_and_public_civic_access_when_open",
+      "visitor_note": "Discover Concord identifies Concord's Italianate Town House at 22 Monument Square as built in 1851 and tied to Emerson, Alcott, and John Brown events. The present Town of Concord address is 22 Monument Square. Keep the Fuller Lyceum/Town Hall relationship under review until a venue-specific nineteenth-century source is attached.",
+      "sources": [
+        {
+          "label": "Discover Concord, A Walk Along Concord's American Mile",
+          "url": "https://www.discoverconcordma.com/articles/761-a-walk-along-concords-american-mile",
+          "type": "local-history"
+        },
+        {
+          "label": "Town of Concord official site",
+          "url": "https://concordma.gov/",
+          "type": "official"
+        }
+      ]
+    },
+    "emerson_house_concord": {
+      "visit_status": "seasonal_house_museum",
+      "survival_status": "structure_survives",
+      "visibility": "interior_and_exterior_by_season",
+      "visitor_note": "Emerson's Concord house survives as a seasonal house museum at 18 Cambridge Turnpike.",
+      "sources": [
+        {
+          "label": "Ralph Waldo Emerson House",
+          "url": "https://emersonhouse.org/",
+          "type": "official"
+        }
+      ]
+    },
+    "orchard_house": {
+      "visit_status": "house_museum",
+      "survival_status": "structure_survives",
+      "visibility": "interior_and_exterior_tours",
+      "visitor_note": "Orchard House survives as the Alcott house museum, with Bronson Alcott's study and the adjacent Hillside Chapel/School of Philosophy context on the grounds.",
+      "sources": [
+        {
+          "label": "Louisa May Alcott's Orchard House",
+          "url": "https://louisamayalcott.org/",
+          "type": "official"
+        }
+      ]
+    },
+    "hillside_chapel": {
+      "visit_status": "site_on_museum_grounds",
+      "survival_status": "structure_survival_needs_confirmation",
+      "visibility": "check_orchard_house_access",
+      "visitor_note": "Hillside Chapel is tied to Orchard House and the Concord School of Philosophy; confirm current access through Orchard House before visiting.",
+      "sources": [
+        {
+          "label": "Louisa May Alcott's Orchard House",
+          "url": "https://louisamayalcott.org/",
+          "type": "official"
+        }
+      ]
+    },
+    "the_wayside_concord": {
+      "visit_status": "seasonal_nps_site",
+      "survival_status": "structure_survives",
+      "visibility": "seasonal_guided_tours_and_exterior",
+      "visitor_note": "The Wayside survives within Minute Man National Historical Park; NPS access is seasonal and should be checked before visiting.",
+      "sources": [
+        {
+          "label": "The Wayside, Minute Man National Historical Park",
+          "url": "https://www.nps.gov/mima/learn/historyculture/the-wayside.htm",
+          "type": "official"
+        }
+      ]
+    },
+    "old_north_bridge": {
+      "visit_status": "public_historic_park",
+      "survival_status": "historic_site_visible",
+      "visibility": "exterior_landscape_and_bridge",
+      "visitor_note": "Old North Bridge is a visible NPS historic landscape in Minute Man National Historical Park.",
+      "sources": [
+        {
+          "label": "Minute Man National Historical Park",
+          "url": "https://www.nps.gov/mima/",
+          "type": "official"
+        }
+      ]
+    },
+    "old_hill_burying_ground_concord": {
+      "visit_status": "public_historic_cemetery",
+      "survival_status": "historic_site_visible",
+      "visibility": "exterior_landscape_and_gravestones",
+      "visitor_note": "Discover Concord lists Old Hill Burying Ground at 2-12 Monument Square; use cemetery rules and daylight access guidance before visiting.",
+      "sources": [
+        {
+          "label": "Discover Concord, Historic Concord: Plan Your Visit - Summer 2026",
+          "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+          "type": "visit-guide"
+        }
+      ]
+    },
+    "sleepy_hollow_cemetery_concord": {
+      "visit_status": "public_historic_cemetery",
+      "survival_status": "historic_site_visible",
+      "visibility": "cemetery_landscape_and_authors_ridge",
+      "visitor_note": "Discover Concord lists Sleepy Hollow Cemetery, including Authors Ridge, at 120 Bedford Street.",
+      "sources": [
+        {
+          "label": "Discover Concord, Historic Concord: Plan Your Visit - Summer 2026",
+          "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+          "type": "visit-guide"
+        }
+      ]
+    },
+    "walden_pond": {
+      "visit_status": "public_state_reservation",
+      "survival_status": "natural_feature_survives",
+      "visibility": "pond_trails_visitor_center",
+      "visitor_note": "Walden Pond is visitable as a Massachusetts state reservation with trails, pond access, and visitor facilities.",
+      "sources": [
+        {
+          "label": "Walden Pond State Reservation",
+          "url": "https://www.mass.gov/locations/walden-pond-state-reservation",
+          "type": "official"
+        }
+      ]
+    },
+    "walden_cabin_site": {
+      "visit_status": "public_state_reservation_marker",
+      "survival_status": "original_structure_absent_site_marked",
+      "visibility": "site_marker_and_replica_context",
+      "visitor_note": "The original cabin does not survive as a standing building; the reservation includes a marked cabin site/replica context that should be verified on-site.",
+      "sources": [
+        {
+          "label": "Walden Pond State Reservation",
+          "url": "https://www.mass.gov/locations/walden-pond-state-reservation",
+          "type": "official"
+        }
+      ]
+    },
+    "fruitlands": {
+      "visit_status": "museum_site",
+      "survival_status": "historic_site_or_museum_context",
+      "visibility": "museum_and_landscape",
+      "visitor_note": "Fruitlands is visitable through the Trustees as Fruitlands Museum; confirm whether a specific Fuller/Alcott event refers to the commune site or museum landscape.",
+      "sources": [
+        {
+          "label": "Fruitlands Museum",
+          "url": "https://thetrustees.org/place/fruitlands-museum/",
+          "type": "official"
+        }
+      ]
+    },
+    "north_elba_john_brown_farm": {
+      "visit_status": "state_historic_site",
+      "survival_status": "historic_site_visible",
+      "visibility": "house_grave_and_grounds",
+      "visitor_note": "John Brown Farm is a New York State historic site; check current hours/season before planning a visit.",
+      "sources": [
+        {
+          "label": "John Brown Farm State Historic Site",
+          "url": "https://parks.ny.gov/historic-sites/johnbrownfarm",
+          "type": "official"
+        }
+      ]
+    },
+    "parker_house_boston": {
+      "visit_status": "operating_hotel_successor",
+      "survival_status": "original_building_replaced_or_altered",
+      "visibility": "current_hotel_exterior_lobby_possible",
+      "visitor_note": "The Parker House name and site survive as the Omni Parker House, but the exact nineteenth-century Saturday Club dining-room setting needs building-history confirmation.",
+      "sources": [
+        {
+          "label": "Omni Parker House",
+          "url": "https://www.omnihotels.com/hotels/boston-parker-house",
+          "type": "official"
+        }
+      ]
+    },
+    "first_parish_cambridge": {
+      "visit_status": "active_church_or_successor_site",
+      "survival_status": "successor_site_needs_event_confirmation",
+      "visibility": "exterior_and_possible_public_events",
+      "visitor_note": "Use the current First Parish in Cambridge as a candidate only after confirming the historical Church Street venue/event.",
+      "sources": [
+        {
+          "label": "First Parish in Cambridge",
+          "url": "https://www.firstparishcambridge.org/",
+          "type": "official"
+        }
+      ]
+    },
+    "harvard_divinity_school": {
+      "visit_status": "active_campus_site",
+      "survival_status": "historic_room_or_building_needs_confirmation",
+      "visibility": "campus_exterior_public_access_varies",
+      "visitor_note": "Confirm the 1838 Divinity School Address building/room before treating the modern campus object as the site.",
+      "sources": [
+        {
+          "label": "Harvard Divinity School",
+          "url": "https://hds.harvard.edu/",
+          "type": "official"
+        }
+      ]
+    },
+    "first_church_concord": {
+      "visit_status": "active_church_or_successor_site",
+      "survival_status": "original_building_lost_reproduction_stands",
+      "visibility": "exterior_and_possible_public_access",
+      "visitor_note": "Discover Concord says the church was damaged by an April 1900 fire and the building now standing is a reproduction; it also says the original bell is displayed on the front lawn. The bell/meetinghouse event still needs source-specific confirmation.",
+      "sources": [
+        {
+          "label": "First Parish in Concord",
+          "url": "https://firstparish.org/",
+          "type": "official"
+        },
+        {
+          "label": "Discover Concord, A Walk Along Concord's American Mile",
+          "url": "https://www.discoverconcordma.com/articles/761-a-walk-along-concords-american-mile",
+          "type": "local-history"
+        }
+      ]
+    },
+    "concord_library": {
+      "visit_status": "active_library_successor_site",
+      "survival_status": "1860_library_location_unresolved",
+      "visibility": "modern_library_visit_possible",
+      "visitor_note": "The current Concord Free Public Library is visitable, but the 1860 library location for Thoreau's Origin copy still needs historical resolution.",
+      "sources": [
+        {
+          "label": "Concord Free Public Library",
+          "url": "https://concordlibrary.org/",
+          "type": "official"
+        }
+      ]
+    }
+  },
+  "defaults": {
+    "visit_status": "needs_visit_research",
+    "survival_status": "unknown",
+    "visibility": "unknown",
+    "visitor_note": "Current visitability and survival of the historical site have not yet been checked."
+  }
+}

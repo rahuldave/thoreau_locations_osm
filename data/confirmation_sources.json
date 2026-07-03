@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-02",
+  "sources": [
+    {
+      "id": "loc-concord-1852-walling",
+      "kind": "historical-map",
+      "title": "Map of the town of Concord, Middlesex County Mass",
+      "creator": "Henry Francis Walling",
+      "date": "1852",
+      "publisher": "H. F. Walling",
+      "url": "https://www.loc.gov/item/2012593522/",
+      "resource_url": "https://www.loc.gov/resource/g3764c.ct001110/",
+      "why_it_matters": "Closest high-value 19th-century Concord map found so far; the Library of Congress metadata says it includes an ancillary Concord village map and White Pond/Walden Pond surveys by H. D. Thoreau.",
+      "place_scope": ["concord_ma", "walden_pond", "walden_cabin_site", "sanborn_house_sudbury_road", "thoreau_main_street_home", "concord_lyceum", "lexington_road_concord"]
+    },
+    {
+      "id": "loc-concord-sanborn-1909",
+      "kind": "historical-map",
+      "title": "Sanborn Fire Insurance Map from Concord, Middlesex County, Massachusetts",
+      "creator": "Sanborn Map Company",
+      "date": "1909-12",
+      "url": "https://www.loc.gov/item/sanborn03711_005/",
+      "resource_url": "https://www.loc.gov/resource/g3764cm.g037111909/",
+      "why_it_matters": "Later than Fuller's 1860 Concord scenes, but useful for building footprints, street names, and continuity checks in the village center.",
+      "place_scope": ["concord_ma", "concord_lyceum", "thoreau_main_street_home", "concord_train_station"]
+    },
+    {
+      "id": "loc-concord-sanborn-1918",
+      "kind": "historical-map",
+      "title": "Sanborn Fire Insurance Map from Concord, Middlesex County, Massachusetts",
+      "creator": "Sanborn Map Company",
+      "date": "1918-08",
+      "url": "https://www.loc.gov/item/sanborn03711_006/",
+      "resource_url": "https://www.loc.gov/resource/g3764cm.g037111918/",
+      "why_it_matters": "Later continuity check for Concord village structures and addresses.",
+      "place_scope": ["concord_ma", "concord_lyceum", "thoreau_main_street_home", "concord_train_station"]
+    },
+    {
+      "id": "loc-roxbury-concord-1775",
+      "kind": "historical-map",
+      "title": "Roxbury to Concord. Roads & distances, &c",
+      "date": "1775",
+      "url": "https://www.loc.gov/item/gm71005470/",
+      "resource_url": "https://www.loc.gov/resource/g3764b.ar089300/",
+      "why_it_matters": "Older road context for Boston-Concord and Lexington-Concord geography; not a direct 1860 source.",
+      "place_scope": ["lexington_road_concord", "boston_ma", "concord_ma"]
+    },
+    {
+      "id": "discover-concord-american-mile-2026",
+      "kind": "local-history-visit-guide",
+      "title": "A Walk Along Concord's American Mile",
+      "date": "2026-06-30",
+      "url": "https://www.discoverconcordma.com/articles/761-a-walk-along-concords-american-mile",
+      "why_it_matters": "Useful current visit-oriented source for surviving Concord sites; it identifies Concord's Italianate Town House at 22 Monument Square as built in 1851 and notes the First Parish reproduction/bell context.",
+      "place_scope": ["concord_lyceum", "first_church_concord", "old_hill_burying_ground_concord", "emerson_house_concord", "orchard_house", "the_wayside_concord"]
+    },
+    {
+      "id": "discover-concord-plan-visit-summer-2026",
+      "kind": "visit-guide",
+      "title": "Historic Concord: Plan Your Visit - Summer 2026",
+      "date": "2026-06-30",
+      "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+      "why_it_matters": "Gives current addresses/contact points for visitable Concord sites such as the library, museum, North Bridge, Old Hill, Old Manse, Emerson House, Sleepy Hollow, Thoreau Farm, Walden Pond, Wayside, and Wright Tavern.",
+      "place_scope": ["concord_library", "old_north_bridge", "old_hill_burying_ground_concord", "emerson_house_concord", "sleepy_hollow_cemetery_concord", "walden_pond", "the_wayside_concord"]
+    },
+    {
+      "id": "caldwell-325-main-sanborn-2025",
+      "kind": "local-history-preservation",
+      "title": "Saving Concord's Darwinian & Abolitionist landmark, where Thoreau met John Brown",
+      "date": "2025-01-29",
+      "url": "https://www.duncancaldwell.com/Snippets-Outbursts-Duncans-Blog/Entries/2025/1/saving-concords-darwinian--abolitionist-landmark-where-thoreau-met-john-brown-1.html",
+      "why_it_matters": "Identifies the Channing-Fuller-Sanborn / Samuel Jones House at 325 Main Street as a surviving private residence and abolitionist/Darwinian landmark; requires historical-map/deed reconciliation with Fuller's Sudbury Road wording.",
+      "place_scope": ["sanborn_house_sudbury_road"]
+    },
+    {
+      "id": "nominatim",
+      "kind": "geocoder",
+      "title": "OpenStreetMap Nominatim",
+      "url": "https://nominatim.org/release-docs/develop/api/Search/",
+      "reverse_url": "https://nominatim.org/release-docs/develop/api/Reverse/",
+      "why_it_matters": "Provides candidate OSM objects and reverse checks, but does not by itself confirm historical identity.",
+      "place_scope": ["all"]
+    },
+    {
+      "id": "osm-main",
+      "kind": "map-database",
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/",
+      "why_it_matters": "Target map/database for modern OSM object links; historical locations still require external confirmation before precise coordinates are accepted.",
+      "place_scope": ["all"]
+    }
+  ]
+}
