@@ -1,7 +1,6 @@
 {
   "schema_version": 1,
   "overrides": [
-    { "public_event_id": "book-19", "place_id": "concord_lyceum" },
     { "public_event_id": "book-34", "place_id": "cambridge_scientific_society" },
     { "public_event_id": "book-36", "place_id": "cambridge_scientific_society" },
     { "public_event_id": "book-42", "place_id": "john_murray_london" },
@@ -33,8 +32,11 @@
     { "public_event_id": "sanborn-10", "place_id": "sanborn_house_sudbury_road" },
     { "public_event_id": "sanborn-15", "place_id": "sanborn_house_sudbury_road" },
     { "public_event_id": "sanborn-16", "place_id": "boston_court_house" },
+    { "public_event_id": "thoreau-1", "place_id": "thoreau_birthplace_farm", "note": "Official Thoreau Farm/Wheeler-Minot Farmhouse site for Thoreau's birthplace; current house/original-lot relationship still needs an old-map note." },
     { "public_event_id": "thoreau-17", "place_id": "sanborn_house_sudbury_road" },
     { "public_event_id": "thoreau-20", "place_id": "concord_lyceum" },
+    { "public_event_id": "thoreau-34", "place_id": "thoreau_main_street_home", "note": "Late-life paper-arranging belongs to Thoreau's Main Street household, not the Transcendental Graveyard chapter setting." },
+    { "public_event_id": "thoreau-35", "place_id": "thoreau_main_street_home", "note": "Thoreau died at the Thoreau-Alcott/Yellow House on Main Street; keep cemetery/burial references separate." },
     { "public_event_id": "crisis-1858-1862-3", "place_id": "cambridge_scientific_society" },
     { "public_event_id": "crisis-1858-1862-4", "place_id": "cambridge_scientific_society" },
     { "public_event_id": "crisis-1858-1862-15", "place_id": "sanborn_house_sudbury_road" },

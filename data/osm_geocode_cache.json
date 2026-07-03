@@ -145,10 +145,10 @@
     "place_id": "concord_lyceum",
     "query": "22 Monument Square, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:45:37.837292+00:00",
+    "checked_at": "2026-07-03T06:24:11.925088+00:00",
     "search_results": [
       {
-        "place_id": 362955893,
+        "place_id": 361634528,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 212583702,
@@ -224,27 +224,96 @@
   },
   "emerson_house_concord": {
     "place_id": "emerson_house_concord",
-    "query": "Ralph Waldo Emerson House, Concord, Massachusetts, United States",
+    "query": "28 Cambridge Turnpike, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:16:18.729956+00:00",
+    "checked_at": "2026-07-03T06:24:14.866339+00:00",
     "search_results": [
       {
-        "place_id": 362441695,
+        "place_id": 404427741,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
-        "osm_id": 212583263,
-        "lat": "42.4576278",
-        "lon": "-71.3434431",
-        "category": "tourism",
-        "type": "museum",
+        "osm_id": 742792920,
+        "lat": "42.4486488",
+        "lon": "-71.3178902",
+        "category": "place",
+        "type": "house",
         "place_rank": 30,
-        "importance": 0.2574973608523206,
-        "addresstype": "tourism",
-        "name": "Ralph Waldo Emerson House",
-        "display_name": "Ralph Waldo Emerson House, 18, Cambridge Turnpike, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "28, Cambridge Turnpike, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01773, United States",
         "address": {
-          "tourism": "Ralph Waldo Emerson House",
-          "house_number": "18",
+          "house_number": "28",
+          "road": "Cambridge Turnpike",
+          "hamlet": "Meriam's Corner",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01773",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": null,
+        "namedetails": null,
+        "boundingbox": [
+          "42.4485988",
+          "42.4486988",
+          "-71.3179402",
+          "-71.3178402"
+        ]
+      },
+      {
+        "place_id": 404443138,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 742792920,
+        "lat": "42.4483968",
+        "lon": "-71.3167529",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "28, Cambridge Turnpike, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01773, United States",
+        "address": {
+          "house_number": "28",
+          "road": "Cambridge Turnpike",
+          "hamlet": "Meriam's Corner",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01773",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": null,
+        "namedetails": null,
+        "boundingbox": [
+          "42.4483468",
+          "42.4484468",
+          "-71.3168029",
+          "-71.3167029"
+        ]
+      },
+      {
+        "place_id": 404427018,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 8916016,
+        "lat": "42.4575981",
+        "lon": "-71.3428465",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "28, Cambridge Turnpike, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "house_number": "28",
           "road": "Cambridge Turnpike",
           "hamlet": "Meriam's Corner",
           "town": "Concord",
@@ -255,51 +324,35 @@
           "country": "United States",
           "country_code": "us"
         },
-        "extratags": {
-          "ele": "42",
-          "phone": "+1-978-369-2236",
-          "museum": "house",
-          "website": "https://www.ralphwaldoemersonhouse.org/",
-          "building": "yes",
-          "heritage": "2",
-          "historic": "house",
-          "nrhp:nhl": "yes",
-          "ref:nrhp": "66000365",
-          "wikidata": "Q7288218",
-          "wikipedia": "en:Ralph Waldo Emerson House",
-          "start_date": "1828",
-          "building:levels": "2",
-          "heritage:operator": "nrhp",
-          "nrhp:inscription_date": "1966-10-15"
-        },
-        "namedetails": {
-          "name": "Ralph Waldo Emerson House"
-        },
+        "extratags": null,
+        "namedetails": null,
         "boundingbox": [
-          "42.4574971",
-          "42.4577560",
-          "-71.3435429",
-          "-71.3433193"
+          "42.4575481",
+          "42.4576481",
+          "-71.3428965",
+          "-71.3427965"
         ]
       }
     ],
     "reverse_result": {
-      "place_id": 361672813,
+      "place_id": 360012714,
       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
       "osm_type": "way",
-      "osm_id": 212583220,
-      "lat": "42.4591790",
-      "lon": "-71.3422482",
-      "category": "building",
-      "type": "yes",
+      "osm_id": 212583263,
+      "lat": "42.4576278",
+      "lon": "-71.3434431",
+      "category": "tourism",
+      "type": "museum",
       "place_rank": 30,
-      "importance": 5.480506599522419e-05,
-      "addresstype": "building",
-      "name": "",
-      "display_name": "91, Walnut Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+      "importance": 0.2574973608523206,
+      "addresstype": "tourism",
+      "name": "Ralph Waldo Emerson House",
+      "display_name": "Ralph Waldo Emerson House, 18, Cambridge Turnpike, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01742, United States",
       "address": {
-        "house_number": "91",
-        "road": "Walnut Street",
+        "tourism": "Ralph Waldo Emerson House",
+        "house_number": "18",
+        "road": "Cambridge Turnpike",
+        "hamlet": "Meriam's Corner",
         "town": "Concord",
         "county": "Middlesex County",
         "state": "Massachusetts",
@@ -308,81 +361,57 @@
         "country": "United States",
         "country_code": "us"
       },
-      "extratags": null,
-      "namedetails": null,
+      "extratags": {
+        "ele": "42",
+        "phone": "+1-978-369-2236",
+        "museum": "house",
+        "website": "https://www.ralphwaldoemersonhouse.org/",
+        "building": "yes",
+        "heritage": "2",
+        "historic": "house",
+        "nrhp:nhl": "yes",
+        "ref:nrhp": "66000365",
+        "wikidata": "Q7288218",
+        "wikipedia": "en:Ralph Waldo Emerson House",
+        "start_date": "1828",
+        "building:levels": "2",
+        "heritage:operator": "nrhp",
+        "nrhp:inscription_date": "1966-10-15"
+      },
+      "namedetails": {
+        "name": "Ralph Waldo Emerson House"
+      },
       "boundingbox": [
-        "42.4591004",
-        "42.4592564",
-        "-71.3423909",
-        "-71.3421131"
+        "42.4574971",
+        "42.4577560",
+        "-71.3435429",
+        "-71.3433193"
       ]
     }
   },
   "thoreau_main_street_home": {
     "place_id": "thoreau_main_street_home",
-    "query": "Main Street, Concord, Massachusetts, United States",
+    "query": "255 Main Street, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:16:21.761704+00:00",
+    "checked_at": "2026-07-03T06:24:17.947096+00:00",
     "search_results": [
       {
-        "place_id": 361392839,
+        "place_id": 361604437,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
-        "osm_id": 8915284,
-        "lat": "42.4464348",
-        "lon": "-71.4173645",
-        "category": "highway",
-        "type": "secondary",
-        "place_rank": 26,
-        "importance": 0.053388138399328565,
-        "addresstype": "road",
-        "name": "Main Street",
-        "display_name": "Main Street, West Concord, Concord, Middlesex County, Massachusetts, 07120, United States",
+        "osm_id": 212584370,
+        "lat": "42.4585156",
+        "lon": "-71.3577830",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.480506599522419e-05,
+        "addresstype": "building",
+        "name": "Thoreau-Alcott House",
+        "display_name": "Thoreau-Alcott House, 255, Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
         "address": {
-          "road": "Main Street",
-          "village": "West Concord",
-          "town": "Concord",
-          "county": "Middlesex County",
-          "state": "Massachusetts",
-          "ISO3166-2-lvl4": "US-MA",
-          "postcode": "07120",
-          "country": "United States",
-          "country_code": "us"
-        },
-        "extratags": {
-          "lanes": "2",
-          "width": "12.2",
-          "surface": "asphalt",
-          "maxspeed": "35 mph",
-          "condition": "fair"
-        },
-        "namedetails": {
-          "ref": "MA 62",
-          "name": "Main Street",
-          "name:en": "Main Street"
-        },
-        "boundingbox": [
-          "42.4421421",
-          "42.4527451",
-          "-71.4262001",
-          "-71.4094511"
-        ]
-      },
-      {
-        "place_id": 361490746,
-        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-        "osm_type": "way",
-        "osm_id": 8915502,
-        "lat": "42.4586513",
-        "lon": "-71.3591572",
-        "category": "highway",
-        "type": "secondary",
-        "place_rank": 26,
-        "importance": 0.053388138399328565,
-        "addresstype": "road",
-        "name": "Main Street",
-        "display_name": "Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
-        "address": {
+          "building": "Thoreau-Alcott House",
+          "house_number": "255",
           "road": "Main Street",
           "town": "Concord",
           "county": "Middlesex County",
@@ -393,69 +422,25 @@
           "country_code": "us"
         },
         "extratags": {
-          "lanes": "2",
-          "width": "14.6",
-          "surface": "asphalt",
-          "maxspeed": "30 mph",
-          "sidewalk": "separate",
-          "parking:both": "yes",
-          "massgis:way_id": "149826",
-          "parking:both:orientation": "parallel",
-          "parking:lane:both:parallel": "painted_area_only"
+          "heritage": "2",
+          "wikidata": "Q7796188",
+          "architect": "Josiah Davis",
+          "wikipedia": "en:Thoreau–Alcott House",
+          "start_date": "1849",
+          "nrhp:criteria": "C",
+          "heritage:operator": "nrhp",
+          "nrhp:inscription_date": "1976-07-12"
         },
         "namedetails": {
-          "ref": "MA 62",
-          "name": "Main Street",
-          "name:en": "Main Street"
+          "name": "Thoreau-Alcott House",
+          "name:en": "Thoreau-Alcott House",
+          "name:es": "Casa Thoreau-Alcott"
         },
         "boundingbox": [
-          "42.4580472",
-          "42.4593379",
-          "-71.3659751",
-          "-71.3523459"
-        ]
-      },
-      {
-        "place_id": 361497457,
-        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-        "osm_type": "way",
-        "osm_id": 1446319448,
-        "lat": "42.4557341",
-        "lon": "-71.3777810",
-        "category": "highway",
-        "type": "secondary",
-        "place_rank": 26,
-        "importance": 0.053388138399328565,
-        "addresstype": "road",
-        "name": "Main Street",
-        "display_name": "Main Street, West Concord, Concord, Middlesex County, Massachusetts, 01742, United States",
-        "address": {
-          "road": "Main Street",
-          "village": "West Concord",
-          "town": "Concord",
-          "county": "Middlesex County",
-          "state": "Massachusetts",
-          "ISO3166-2-lvl4": "US-MA",
-          "postcode": "01742",
-          "country": "United States",
-          "country_code": "us"
-        },
-        "extratags": {
-          "lanes": "2",
-          "width": "14.6",
-          "surface": "asphalt",
-          "maxspeed": "25 mph"
-        },
-        "namedetails": {
-          "ref": "MA 62",
-          "name": "Main Street",
-          "name:en": "Main Street"
-        },
-        "boundingbox": [
-          "42.4556739",
-          "42.4557942",
-          "-71.3782895",
-          "-71.3772726"
+          "42.4584091",
+          "42.4586455",
+          "-71.3580410",
+          "-71.3577144"
         ]
       }
     ]
@@ -643,56 +628,19 @@
   },
   "old_hill_burying_ground_concord": {
     "place_id": "old_hill_burying_ground_concord",
-    "query": "Old Hill Burying Ground, Concord, Massachusetts, United States",
+    "query": "Old Hill Burying Ground, 2-12 Monument Square, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:17:41.108465+00:00",
-    "search_results": [],
-    "reverse_result": {
-      "place_id": 362926135,
-      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-      "osm_type": "way",
-      "osm_id": 926723557,
-      "lat": "42.4604120",
-      "lon": "-71.3507360",
-      "category": "amenity",
-      "type": "parking",
-      "place_rank": 30,
-      "importance": 5.480506599522419e-05,
-      "addresstype": "amenity",
-      "name": "",
-      "display_name": "Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
-      "address": {
-        "road": "Main Street",
-        "town": "Concord",
-        "county": "Middlesex County",
-        "state": "Massachusetts",
-        "ISO3166-2-lvl4": "US-MA",
-        "postcode": "01742",
-        "country": "United States",
-        "country_code": "us"
-      },
-      "extratags": {
-        "surface": "asphalt",
-        "capacity": "5",
-        "capacity:disabled": "1"
-      },
-      "namedetails": null,
-      "boundingbox": [
-        "42.4603065",
-        "42.4604917",
-        "-71.3508870",
-        "-71.3505510"
-      ]
-    }
+    "checked_at": "2026-07-03T06:27:41.276689+00:00",
+    "search_results": []
   },
   "sleepy_hollow_cemetery_concord": {
     "place_id": "sleepy_hollow_cemetery_concord",
     "query": "Sleepy Hollow Cemetery, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:16:32.703004+00:00",
+    "checked_at": "2026-07-03T06:27:43.637364+00:00",
     "search_results": [
       {
-        "place_id": 361472455,
+        "place_id": 360341027,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 318025506,
@@ -741,7 +689,7 @@
       }
     ],
     "reverse_result": {
-      "place_id": 361713582,
+      "place_id": 363093316,
       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
       "osm_type": "way",
       "osm_id": 218022877,
@@ -780,7 +728,7 @@
     "place_id": "walden_pond",
     "query": "Walden Pond, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:16:35.879350+00:00",
+    "checked_at": "2026-07-03T06:24:27.288721+00:00",
     "search_results": [
       {
         "place_id": 362707609,
@@ -824,7 +772,7 @@
       }
     ],
     "reverse_result": {
-      "place_id": 361345215,
+      "place_id": 363064049,
       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
       "osm_type": "way",
       "osm_id": 38667721,
@@ -919,10 +867,10 @@
     "place_id": "orchard_house",
     "query": "Orchard House, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:16:42.260843+00:00",
+    "checked_at": "2026-07-03T06:24:33.214386+00:00",
     "search_results": [
       {
-        "place_id": 362238610,
+        "place_id": 361674865,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 212582895,
@@ -970,7 +918,7 @@
       }
     ],
     "reverse_result": {
-      "place_id": 363001897,
+      "place_id": 362375287,
       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
       "osm_type": "way",
       "osm_id": 212583230,
@@ -1008,10 +956,10 @@
     "place_id": "the_wayside_concord",
     "query": "The Wayside, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:16:45.500695+00:00",
+    "checked_at": "2026-07-03T06:24:36.374998+00:00",
     "search_results": [
       {
-        "place_id": 363913435,
+        "place_id": 364210991,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 212582771,
@@ -1053,7 +1001,7 @@
       }
     ],
     "reverse_result": {
-      "place_id": 361849071,
+      "place_id": 361706178,
       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
       "osm_type": "way",
       "osm_id": 212583289,
@@ -6910,10 +6858,10 @@
     "place_id": "old_north_bridge",
     "query": "Old North Bridge, Concord, Massachusetts, United States",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:32:55.000954+00:00",
+    "checked_at": "2026-07-03T06:24:30.442081+00:00",
     "search_results": [
       {
-        "place_id": 362355369,
+        "place_id": 362364266,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 491615206,
@@ -6957,7 +6905,7 @@
         ]
       },
       {
-        "place_id": 358291898,
+        "place_id": 361675968,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 39681030,
@@ -7325,24 +7273,24 @@
     "place_id": "concord_library",
     "query": "Concord Free Public Library Concord Massachusetts",
     "source": "https://nominatim.openstreetmap.org/",
-    "checked_at": "2026-07-02T23:33:12.192528+00:00",
+    "checked_at": "2026-07-03T06:24:55.213379+00:00",
     "search_results": [
       {
-        "place_id": 362323469,
+        "place_id": 361734701,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "way",
         "osm_id": 212584064,
         "lat": "42.4588186",
         "lon": "-71.3534425",
-        "category": "amenity",
-        "type": "library",
+        "category": "office",
+        "type": "Concord",
         "place_rank": 30,
         "importance": 0.17283327415591612,
-        "addresstype": "amenity",
+        "addresstype": "office",
         "name": "Concord Free Public Library",
         "display_name": "Concord Free Public Library, 129, Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
         "address": {
-          "amenity": "Concord Free Public Library",
+          "office": "Concord Free Public Library",
           "house_number": "129",
           "road": "Main Street",
           "town": "Concord",
@@ -7354,8 +7302,8 @@
           "country_code": "us"
         },
         "extratags": {
-          "office": "Concord",
           "region": "Metrowest",
+          "amenity": "library",
           "website": "https://concordlibrary.org/",
           "building": "yes",
           "wikidata": "Q5158795",
@@ -8408,5 +8356,636 @@
         "2.3478117"
       ]
     }
+  },
+  "thoreau_birthplace_farm": {
+    "place_id": "thoreau_birthplace_farm",
+    "query": "341 Virginia Road, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:24:19.505437+00:00",
+    "search_results": [
+      {
+        "place_id": 365668466,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 212581928,
+        "lat": "42.4688007",
+        "lon": "-71.3110932",
+        "category": "tourism",
+        "type": "attraction",
+        "place_rank": 30,
+        "importance": 0.23094323434513592,
+        "addresstype": "tourism",
+        "name": "Thoreau Farm - Birthplace of Henry David Thoreau",
+        "display_name": "Thoreau Farm - Birthplace of Henry David Thoreau, 341, Virginia Road, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "tourism": "Thoreau Farm - Birthplace of Henry David Thoreau",
+          "house_number": "341",
+          "road": "Virginia Road",
+          "hamlet": "Meriam's Corner",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "email": "info@thoreaufarm.org",
+          "website": "https://thoreaufarm.org/",
+          "building": "yes",
+          "heritage": "2",
+          "historic": "building",
+          "ref:nrhp": "4000190",
+          "wikidata": "Q6948294",
+          "wikipedia": "en:Wheeler-Minot Farmhouse",
+          "start_date": "1730",
+          "nrhp:criteria": "C",
+          "heritage:operator": "nrhp",
+          "building:architecture": "Colonial, Georgiana",
+          "nrhp:inscription_date": "2004-03-18",
+          "name:etymology:wikidata": "Q131149"
+        },
+        "namedetails": {
+          "name": "Thoreau Farm - Birthplace of Henry David Thoreau",
+          "name:en": "Thoreau Farm - Birthplace of Henry David Thoreau",
+          "name:es": "Granja Thoreau - Lugar de nacimiento de Henry David Thoreau",
+          "alt_name": "Wheeler-Minot Farmhouse",
+          "alt_name:es": "Hacienda Wheeler-Minot"
+        },
+        "boundingbox": [
+          "42.4686976",
+          "42.4688567",
+          "-71.3111848",
+          "-71.3110287"
+        ]
+      },
+      {
+        "place_id": 362798964,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 6612996668,
+        "lat": "42.4687434",
+        "lon": "-71.3110998",
+        "category": "office",
+        "type": "association",
+        "place_rank": 30,
+        "importance": 5.480506599522419e-05,
+        "addresstype": "office",
+        "name": "Thoreau Society",
+        "display_name": "Thoreau Society, 341, Virginia Road, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "office": "Thoreau Society",
+          "house_number": "341",
+          "road": "Virginia Road",
+          "hamlet": "Meriam's Corner",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "website": "https://thoreausociety.org/",
+          "wikidata": "Q7796191",
+          "wikipedia": "en:Thoreau Society",
+          "description": "The Thoreau Society exists to stimulate interest in and foster education about Thoreau’s life, works, legacy and his place in his world and in ours, challenging all to live a deliberate, considered life.",
+          "contact:email": "info@thoreausociety.org"
+        },
+        "namedetails": {
+          "name": "Thoreau Society",
+          "name:en": "Thoreau Society",
+          "name:es": "Sociedad Thoreau"
+        },
+        "boundingbox": [
+          "42.4686934",
+          "42.4687934",
+          "-71.3111498",
+          "-71.3110498"
+        ]
+      }
+    ]
+  },
+  "concord_museum": {
+    "place_id": "concord_museum",
+    "query": "Concord Museum, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:27:47.260763+00:00",
+    "search_results": [
+      {
+        "place_id": 362246134,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 2841033,
+        "lat": "42.4576843",
+        "lon": "-71.3417122",
+        "category": "tourism",
+        "type": "museum",
+        "place_rank": 30,
+        "importance": 0.2809844805284867,
+        "addresstype": "tourism",
+        "name": "Concord Museum",
+        "display_name": "Concord Museum, 200, Lexington Road, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "tourism": "Concord Museum",
+          "house_number": "200",
+          "road": "Lexington Road",
+          "hamlet": "Meriam's Corner",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "museum": "history",
+          "toilets": "yes",
+          "website": "https://concordmuseum.org/",
+          "building": "yes",
+          "wikidata": "Q5158830",
+          "wikipedia": "en:Concord Museum",
+          "wheelchair": "yes",
+          "description": "The Concord Museum in historic Concord, Massachusetts houses one of the oldest and most treasured collections of Americana in the country.",
+          "museum_type": "municipal",
+          "opening_hours": "Tu-Su 10:00-16:00; PH closed",
+          "toilets:wheelchair": "yes"
+        },
+        "namedetails": {
+          "name": "Concord Museum",
+          "name:en": "Concord Museum",
+          "name:es": "Museo Concord"
+        },
+        "boundingbox": [
+          "42.4575178",
+          "42.4578452",
+          "-71.3423384",
+          "-71.3414947"
+        ]
+      }
+    ],
+    "reverse_result": {
+      "place_id": 361672036,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2841033,
+      "lat": "42.4576843",
+      "lon": "-71.3417122",
+      "category": "tourism",
+      "type": "museum",
+      "place_rank": 30,
+      "importance": 0.2809844805284867,
+      "addresstype": "tourism",
+      "name": "Concord Museum",
+      "display_name": "Concord Museum, 200, Lexington Road, Meriam's Corner, Concord, Middlesex County, Massachusetts, 01742, United States",
+      "address": {
+        "tourism": "Concord Museum",
+        "house_number": "200",
+        "road": "Lexington Road",
+        "hamlet": "Meriam's Corner",
+        "town": "Concord",
+        "county": "Middlesex County",
+        "state": "Massachusetts",
+        "ISO3166-2-lvl4": "US-MA",
+        "postcode": "01742",
+        "country": "United States",
+        "country_code": "us"
+      },
+      "extratags": {
+        "museum": "history",
+        "toilets": "yes",
+        "website": "https://concordmuseum.org/",
+        "building": "yes",
+        "wikidata": "Q5158830",
+        "wikipedia": "en:Concord Museum",
+        "wheelchair": "yes",
+        "description": "The Concord Museum in historic Concord, Massachusetts houses one of the oldest and most treasured collections of Americana in the country.",
+        "museum_type": "municipal",
+        "opening_hours": "Tu-Su 10:00-16:00; PH closed",
+        "toilets:wheelchair": "yes"
+      },
+      "namedetails": {
+        "name": "Concord Museum",
+        "name:en": "Concord Museum",
+        "name:es": "Museo Concord"
+      },
+      "boundingbox": [
+        "42.4575178",
+        "42.4578452",
+        "-71.3423384",
+        "-71.3414947"
+      ]
+    }
+  },
+  "concord_visitor_center": {
+    "place_id": "concord_visitor_center",
+    "query": "58 Main Street, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:24:40.827090+00:00",
+    "search_results": [
+      {
+        "place_id": 360618067,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 212583892,
+        "lat": "42.4601979",
+        "lon": "-71.3509713",
+        "category": "information",
+        "type": "office",
+        "place_rank": 30,
+        "importance": 5.480506599522419e-05,
+        "addresstype": "information",
+        "name": "Concord Visitor Center",
+        "display_name": "Concord Visitor Center, 58, Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "information": "Concord Visitor Center",
+          "house_number": "58",
+          "road": "Main Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "tourism": "information",
+          "website": "https://visitconcord.org/visit/visitor-center/",
+          "building": "yes",
+          "wheelchair": "yes",
+          "opening_hours:signed": "no",
+          "check_date:opening_hours": "2023-03-16"
+        },
+        "namedetails": {
+          "name": "Concord Visitor Center"
+        },
+        "boundingbox": [
+          "42.4601307",
+          "42.4602649",
+          "-71.3510604",
+          "-71.3508822"
+        ]
+      },
+      {
+        "place_id": 363134471,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 3805665465,
+        "lat": "42.4602405",
+        "lon": "-71.3509521",
+        "category": "amenity",
+        "type": "toilets",
+        "place_rank": 30,
+        "importance": 5.480506599522419e-05,
+        "addresstype": "amenity",
+        "name": "",
+        "display_name": "58, Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "house_number": "58",
+          "road": "Main Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "check_date": "2023-03-16",
+          "wheelchair": "limited",
+          "changing_table": "yes"
+        },
+        "namedetails": null,
+        "boundingbox": [
+          "42.4601905",
+          "42.4602905",
+          "-71.3510021",
+          "-71.3509021"
+        ]
+      },
+      {
+        "place_id": 404878743,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 8915582,
+        "lat": "42.4601193",
+        "lon": "-71.3487529",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "58, Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "house_number": "58",
+          "road": "Main Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": null,
+        "namedetails": null,
+        "boundingbox": [
+          "42.4600693",
+          "42.4601693",
+          "-71.3488029",
+          "-71.3487029"
+        ]
+      }
+    ]
+  },
+  "minute_man_visitor_center": {
+    "place_id": "minute_man_visitor_center",
+    "query": "250 North Great Road, Lincoln, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:27:50.426216+00:00",
+    "search_results": [
+      {
+        "place_id": 396133563,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 591294909,
+        "lat": "42.4489286",
+        "lon": "-71.2753561",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "250, North Great Road, Lincoln, Middlesex County, Massachusetts, 01773, United States",
+        "address": {
+          "house_number": "250",
+          "road": "North Great Road",
+          "village": "Lincoln",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01773",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": null,
+        "namedetails": null,
+        "boundingbox": [
+          "42.4488786",
+          "42.4489786",
+          "-71.2754061",
+          "-71.2753061"
+        ]
+      }
+    ]
+  },
+  "north_bridge_visitor_center": {
+    "place_id": "north_bridge_visitor_center",
+    "query": "North Bridge Visitor Center, 174 Liberty Street, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:24:44.293003+00:00",
+    "search_results": [
+      {
+        "place_id": 363011868,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13254395879,
+        "lat": "42.4708669",
+        "lon": "-71.3525610",
+        "category": "information",
+        "type": "office",
+        "place_rank": 30,
+        "importance": 5.480506599522419e-05,
+        "addresstype": "information",
+        "name": "North Bridge Visitor Center",
+        "display_name": "North Bridge Visitor Center, Liberty Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "information": "North Bridge Visitor Center",
+          "road": "Liberty Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "tourism": "information",
+          "operator": "National Park Service"
+        },
+        "namedetails": {
+          "name": "North Bridge Visitor Center"
+        },
+        "boundingbox": [
+          "42.4708169",
+          "42.4709169",
+          "-71.3526110",
+          "-71.3525110"
+        ]
+      }
+    ]
+  },
+  "old_manse": {
+    "place_id": "old_manse",
+    "query": "269 Monument Street, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:27:52.170881+00:00",
+    "search_results": [
+      {
+        "place_id": 361634689,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 239363438,
+        "lat": "42.4683155",
+        "lon": "-71.3491935",
+        "category": "tourism",
+        "type": "attraction",
+        "place_rank": 30,
+        "importance": 0.39368109814034213,
+        "addresstype": "tourism",
+        "name": "Old Manse",
+        "display_name": "Old Manse, 269, Monument Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "tourism": "Old Manse",
+          "house_number": "269",
+          "road": "Monument Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "building": "yes",
+          "historic": "building",
+          "wikidata": "Q4439852"
+        },
+        "namedetails": {
+          "name": "Old Manse"
+        },
+        "boundingbox": [
+          "42.4682112",
+          "42.4684191",
+          "-71.3493949",
+          "-71.3490795"
+        ]
+      }
+    ]
+  },
+  "robbins_house": {
+    "place_id": "robbins_house",
+    "query": "320 Monument Street, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:27:53.672063+00:00",
+    "search_results": [
+      {
+        "place_id": 396585445,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1462634744,
+        "lat": "42.4716782",
+        "lon": "-71.3499728",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "320, Monument Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "house_number": "320",
+          "road": "Monument Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": null,
+        "namedetails": null,
+        "boundingbox": [
+          "42.4716282",
+          "42.4717282",
+          "-71.3500228",
+          "-71.3499228"
+        ]
+      }
+    ]
+  },
+  "south_bridge_boat_house": {
+    "place_id": "south_bridge_boat_house",
+    "query": "South Bridge Boat House, 496 Main Street, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:24:49.993163+00:00",
+    "search_results": [
+      {
+        "place_id": 361346029,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 212585194,
+        "lat": "42.4582391",
+        "lon": "-71.3665881",
+        "category": "amenity",
+        "type": "boat_rental",
+        "place_rank": 30,
+        "importance": 5.480506599522419e-05,
+        "addresstype": "amenity",
+        "name": "South Bridge Boat House",
+        "display_name": "South Bridge Boat House, 496, Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "amenity": "South Bridge Boat House",
+          "house_number": "496",
+          "road": "Main Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "building": "yes"
+        },
+        "namedetails": {
+          "name": "South Bridge Boat House"
+        },
+        "boundingbox": [
+          "42.4581552",
+          "42.4583226",
+          "-71.3667029",
+          "-71.3665053"
+        ]
+      }
+    ]
+  },
+  "south_burying_ground_concord": {
+    "place_id": "south_burying_ground_concord",
+    "query": "South Burying Ground, Main Street and Keyes Road, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:27:55.361214+00:00",
+    "search_results": []
+  },
+  "wright_tavern": {
+    "place_id": "wright_tavern",
+    "query": "Wright Tavern, Concord, Massachusetts, United States",
+    "source": "https://nominatim.openstreetmap.org/",
+    "checked_at": "2026-07-03T06:27:56.545449+00:00",
+    "search_results": [
+      {
+        "place_id": 363030364,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 212583722,
+        "lat": "42.4601256",
+        "lon": "-71.3487147",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.480506599522419e-05,
+        "addresstype": "building",
+        "name": "Wright Tavern",
+        "display_name": "Wright Tavern, 1, Main Street, Concord, Middlesex County, Massachusetts, 01742, United States",
+        "address": {
+          "building": "Wright Tavern",
+          "house_number": "1",
+          "road": "Main Street",
+          "town": "Concord",
+          "county": "Middlesex County",
+          "state": "Massachusetts",
+          "ISO3166-2-lvl4": "US-MA",
+          "postcode": "01742",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "extratags": {
+          "wikidata": "Q8038155",
+          "wikipedia": "en:Wright's Tavern"
+        },
+        "namedetails": {
+          "name": "Wright Tavern",
+          "name:en": "Wright Tavern",
+          "addr:housename": "Wright Tavern"
+        },
+        "boundingbox": [
+          "42.4600137",
+          "42.4602344",
+          "-71.3488547",
+          "-71.3486151"
+        ]
+      }
+    ]
   }
 }

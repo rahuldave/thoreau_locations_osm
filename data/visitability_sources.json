@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-07-02",
+  "checked_at": "2026-07-03",
   "places": {
     "sanborn_house_sudbury_road": {
       "visit_status": "private_residence",
@@ -37,12 +37,48 @@
       "visit_status": "seasonal_house_museum",
       "survival_status": "structure_survives",
       "visibility": "interior_and_exterior_by_season",
-      "visitor_note": "Emerson's Concord house survives as a seasonal house museum at 18 Cambridge Turnpike.",
+      "visitor_note": "Emerson's Concord house survives as a seasonal house museum at 28 Cambridge Turnpike.",
       "sources": [
         {
-          "label": "Ralph Waldo Emerson House",
-          "url": "https://emersonhouse.org/",
+          "label": "Ralph Waldo Emerson Memorial Association, Visit the Emerson House",
+          "url": "https://rwema.org/visit-the-emerson-house",
           "type": "official"
+        }
+      ]
+    },
+    "thoreau_main_street_home": {
+      "visit_status": "private_residence",
+      "survival_status": "structure_survives_source_confirmed",
+      "visibility": "exterior_from_public_way_only",
+      "visitor_note": "The Thoreau-Alcott/Yellow House at 255 Main Street survives, but it is a private residence. Treat it as view-from-public-way only.",
+      "sources": [
+        {
+          "label": "Thoreau-Alcott House",
+          "url": "https://en.wikipedia.org/wiki/Thoreau%E2%80%93Alcott_House",
+          "type": "reference"
+        },
+        {
+          "label": "Architectural Digest, Henry David Thoreau's Yellow House Hits the Market",
+          "url": "https://www.architecturaldigest.com/story/henry-david-thoreau-yellow-house-hits-the-market",
+          "type": "architecture-history"
+        }
+      ]
+    },
+    "thoreau_birthplace_farm": {
+      "visit_status": "house_museum",
+      "survival_status": "structure_survives_relocated_or_original_lot_needs_note",
+      "visibility": "interior_tours_and_grounds",
+      "visitor_note": "Thoreau Farm is the public-facing Thoreau birthplace site at 341 Virginia Road. The grounds and seasonal tours are visitable, but the original nearby-lot/move history should stay visible in the record.",
+      "sources": [
+        {
+          "label": "Thoreau Farm",
+          "url": "https://thoreaufarm.org/",
+          "type": "official"
+        },
+        {
+          "label": "Wheeler-Minot Farmhouse",
+          "url": "https://en.wikipedia.org/wiki/Wheeler-Minot_Farmhouse",
+          "type": "reference"
         }
       ]
     },
@@ -80,7 +116,7 @@
       "sources": [
         {
           "label": "The Wayside, Minute Man National Historical Park",
-          "url": "https://www.nps.gov/mima/learn/historyculture/the-wayside.htm",
+          "url": "https://www.nps.gov/mima/learn/historyculture/thewayside.htm",
           "type": "official"
         }
       ]
@@ -146,6 +182,128 @@
         {
           "label": "Walden Pond State Reservation",
           "url": "https://www.mass.gov/locations/walden-pond-state-reservation",
+          "type": "official"
+        }
+      ]
+    },
+    "concord_museum": {
+      "visit_status": "museum_site",
+      "survival_status": "active_museum_site",
+      "visibility": "museum_building_and_collections",
+      "visitor_note": "Concord Museum is a public museum at 53 Cambridge Turnpike and is useful as a visit/collection stop rather than a Fuller event site unless a passage specifically names it.",
+      "sources": [
+        {
+          "label": "Concord Museum",
+          "url": "https://concordmuseum.org/",
+          "type": "official"
+        }
+      ]
+    },
+    "concord_visitor_center": {
+      "visit_status": "visitor_center",
+      "survival_status": "modern_visitor_logistics_site",
+      "visibility": "public_visitor_services",
+      "visitor_note": "Concord Visitor Center is a modern trip-planning site at 58 Main Street, not a nineteenth-century event site.",
+      "sources": [
+        {
+          "label": "Visit Concord",
+          "url": "https://visitconcord.org/",
+          "type": "official"
+        }
+      ]
+    },
+    "minute_man_visitor_center": {
+      "visit_status": "visitor_center",
+      "survival_status": "modern_visitor_logistics_site",
+      "visibility": "seasonal_public_visitor_services",
+      "visitor_note": "Minute Man Visitor Center is an NPS planning/access point at 250 North Great Road in Lincoln; keep it separate from historical bridge, road, and house sites.",
+      "sources": [
+        {
+          "label": "NPS, Minute Man Visitor Center",
+          "url": "https://www.nps.gov/mima/planyourvisit/minute-man-visitor-center.htm",
+          "type": "official"
+        }
+      ]
+    },
+    "north_bridge_visitor_center": {
+      "visit_status": "visitor_center",
+      "survival_status": "modern_visitor_logistics_site",
+      "visibility": "seasonal_public_visitor_services",
+      "visitor_note": "North Bridge Visitor Center is the NPS visitor point at 174 Liberty Street; keep it separate from the bridge itself.",
+      "sources": [
+        {
+          "label": "NPS, North Bridge Visitor Center",
+          "url": "https://www.nps.gov/mima/planyourvisit/north-bridge-visitor-center.htm",
+          "type": "official"
+        }
+      ]
+    },
+    "old_manse": {
+      "visit_status": "house_museum",
+      "survival_status": "structure_survives",
+      "visibility": "interior_and_exterior_tours",
+      "visitor_note": "The Old Manse survives at 269 Monument Street as a Trustees historic house museum.",
+      "sources": [
+        {
+          "label": "The Trustees, The Old Manse",
+          "url": "https://thetrustees.org/place/the-old-manse/",
+          "type": "official"
+        }
+      ]
+    },
+    "robbins_house": {
+      "visit_status": "museum_site",
+      "survival_status": "structure_survives",
+      "visibility": "museum_and_exterior_access",
+      "visitor_note": "The Robbins House survives at 320 Monument Street and interprets Concord's early Black history; check current hours before visiting.",
+      "sources": [
+        {
+          "label": "The Robbins House",
+          "url": "https://www.robbinshouse.org/",
+          "type": "official"
+        }
+      ]
+    },
+    "south_bridge_boat_house": {
+      "visit_status": "operating_boathouse",
+      "survival_status": "modern_recreation_business",
+      "visibility": "public_business_hours_seasonal_weather_dependent",
+      "visitor_note": "South Bridge Boat House is an operating canoe/kayak rental site. Its official site gives 496 Main Street, while the Discover Concord photo/listing gives 469 Main Street; keep the address conflict visible until rechecked.",
+      "sources": [
+        {
+          "label": "South Bridge Boat House",
+          "url": "https://www.concordboathouse.com/",
+          "type": "official"
+        },
+        {
+          "label": "Discover Concord, Historic Concord: Plan Your Visit - Summer 2026",
+          "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+          "type": "visit-guide"
+        }
+      ]
+    },
+    "south_burying_ground_concord": {
+      "visit_status": "public_historic_cemetery",
+      "survival_status": "historic_site_visible",
+      "visibility": "exterior_landscape_and_gravestones",
+      "visitor_note": "South Burying Ground is a Concord cemetery at Main Street and Keyes Road; use cemetery rules and daylight access guidance before visiting.",
+      "sources": [
+        {
+          "label": "Town of Concord, South Burying Ground",
+          "url": "https://concordma.gov/1958/South-Burying-Ground",
+          "type": "official"
+        }
+      ]
+    },
+    "wright_tavern": {
+      "visit_status": "historic_site_public_access_varies",
+      "survival_status": "structure_survives",
+      "visibility": "events_and_limited_public_access",
+      "visitor_note": "Wright Tavern survives at 2 Lexington Road; public access varies by programs/events, so check the official site before visiting.",
+      "sources": [
+        {
+          "label": "Wright Tavern",
+          "url": "https://www.wrighttavern.org/",
           "type": "official"
         }
       ]

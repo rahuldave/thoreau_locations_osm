@@ -37,8 +37,8 @@ Public site:
 - Generated chronology-to-location links:
   `data/chronology_location_links.json`.
 
-The current Fuller pilot seed file contains 69 places, but the generated atlas
-shows only the 39 site-level records. It suppresses broad context rows such as
+The current Fuller pilot seed file contains 79 entries, but the generated atlas
+shows only the 49 site-level records. It suppresses broad context rows such as
 countries, states, cities, counties, regions, rivers, roads, and canals because
 they are not useful targets for OSM/address review. Suppressed context rows are
 kept in `data/fuller_place_catalog.json` only as an audit list.
@@ -72,9 +72,10 @@ Each place should move through six layers:
 
 Do not assign precise coordinates to historical residences, schools, wharves,
 or meeting rooms from a modern street match alone. Examples that still need
-historical confirmation include Franklin Sanborn's house on Sudbury Road,
-Thoreau's family house on Main Street, the Concord Lyceum venue, Boston Wharf,
-and Emerson's Walden woodlot.
+historical confirmation include Franklin Sanborn's house on Sudbury Road, the
+pre-1851 Concord Lyceum venue, Boston Wharf, Emerson's Walden woodlot, and any
+house-level claim where the modern address is known but the period-map or deed
+evidence is still incomplete.
 
 The UI uses chips rather than formal tags. The visitability chip is the one to
 use for "visitable" status: filter by `Visitable / public-ish`, `Private
@@ -119,11 +120,14 @@ claims. `data/visitability_sources.json` separates:
 - `visibility`: what a visitor can reasonably see today.
 
 For example, the Sanborn/Channing-Fuller-Sanborn candidate at 325 Main Street
-is marked as a surviving private-residence candidate, viewable only from the
-public way, while the Concord Town House/Lyceum candidate is marked as an
-active municipal building whose 1851 Town House identity is supported by
-current local-history and civic sources but whose exact Lyceum relationship
-still needs source-specific confirmation.
+and the Thoreau-Alcott House / Thoreau family Main Street home at 255 Main
+Street are marked as surviving private residences, viewable only from the
+public way. Thoreau Farm at 341 Virginia Road, the Emerson House at 28
+Cambridge Turnpike, and public Concord historic sites from the Discover Concord
+guide have written addresses, Google Maps links, and visitability records. The
+Concord Town House/Lyceum record is scoped to the post-1851 Town House at 22
+Monument Square; pre-1851 Lyceum events should stay unresolved until their venue
+can be separately proved.
 
 ## Regeneration
 

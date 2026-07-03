@@ -20,6 +20,8 @@ GEOCODE_CACHE_PATH = ROOT / "data" / "osm_geocode_cache.json"
 BOOK_LINE_ANCHORS_PATH = WORKSPACE / "thoreau_biographies_chronology" / "book_line_anchors.json"
 GEOREFERENCE_CONTROL_POINTS_PATH = ROOT / "data" / "georeference_control_points.json"
 VISITABILITY_SOURCES_PATH = ROOT / "data" / "visitability_sources.json"
+CHRONOLOGY_SUPPRESSIONS_PATH = ROOT / "data" / "chronology_location_suppressions.json"
+CHRONOLOGY_OVERRIDES_PATH = ROOT / "data" / "chronology_location_overrides.json"
 CATALOG_PATH = ROOT / "data" / "fuller_place_catalog.json"
 MENTIONS_CSV_PATH = ROOT / "data" / "fuller_place_mentions.csv"
 EVENTS_CSV_PATH = ROOT / "data" / "fuller_place_chronology_events.csv"
@@ -72,6 +74,7 @@ VISITABLE_STATUSES = {
     "house_museum",
     "museum_site",
     "operating_hotel_successor",
+    "operating_boathouse",
     "public_historic_cemetery",
     "public_historic_park",
     "public_state_reservation",
@@ -80,6 +83,8 @@ VISITABLE_STATUSES = {
     "seasonal_nps_site",
     "site_on_museum_grounds",
     "state_historic_site",
+    "visitor_center",
+    "historic_site_public_access_varies",
 }
 CHRONOLOGY_PUBLIC_IDS = {
     "thoreau_chronology": "thoreau",
@@ -349,6 +354,62 @@ def matched_chronology_events(place: dict, events: list[dict]) -> list[dict]:
     return matches
 
 
+def event_summary(event: dict, matched_aliases: list[str], override_note: str | None = None) -> dict:
+    summary = {
+        "event_id": event["event_id"],
+        "public_event_id": event["public_event_id"],
+        "public_chronology_url": event["public_chronology_url"],
+        "chronology": event["chronology"],
+        "local_path": event["local_path"],
+        "line": event["line"],
+        "headline": event["headline"],
+        "summary": event["summary"],
+        "matched_aliases": matched_aliases,
+        "book_anchors": event["book_anchors"],
+        "source_keys": event["source_keys"],
+        "web_context_lines": event["web_context_lines"],
+    }
+    if override_note:
+        summary["override_note"] = override_note
+    return summary
+
+
+def apply_chronology_rules(place: dict, events: list[dict], suppressions: dict, overrides: dict) -> list[dict]:
+    suppressed = {
+        (item["public_event_id"], item["place_id"])
+        for item in suppressions.get("suppressions", [])
+    }
+    event_by_public_id = {
+        event["public_event_id"]: event
+        for event in events
+        if event.get("public_event_id")
+    }
+    matches = [
+        event
+        for event in matched_chronology_events(place, events)
+        if (event.get("public_event_id"), place["id"]) not in suppressed
+    ]
+    seen_public_ids = {event.get("public_event_id") for event in matches}
+    for item in overrides.get("overrides", []):
+        if item.get("place_id") != place["id"]:
+            continue
+        public_event_id = item.get("public_event_id")
+        if not public_event_id or public_event_id in seen_public_ids:
+            continue
+        event = event_by_public_id.get(public_event_id)
+        if not event:
+            continue
+        matches.append(
+            event_summary(
+                event,
+                [item.get("label") or "manual override"],
+                item.get("note"),
+            )
+        )
+        seen_public_ids.add(public_event_id)
+    return sorted(matches, key=lambda event: (event.get("local_path", ""), event.get("line", 0)))
+
+
 def merge_visitability(place: dict, visitability_data: dict) -> dict:
     defaults = visitability_data.get("defaults", {})
     place_visitability = visitability_data.get("places", {}).get(place["id"], {})
@@ -431,6 +492,8 @@ def enrich(seed: dict, max_examples: int) -> list[dict]:
     cells = read_cells(db_path, book_id)
     geocode_cache = load_json(GEOCODE_CACHE_PATH, {})
     visitability_data = load_json(VISITABILITY_SOURCES_PATH, {"defaults": {}, "places": {}})
+    suppressions = load_json(CHRONOLOGY_SUPPRESSIONS_PATH, {"suppressions": []})
+    overrides = load_json(CHRONOLOGY_OVERRIDES_PATH, {"overrides": []})
     chronology_events = parse_chronology_events(source_book)
     places = []
 
@@ -440,7 +503,7 @@ def enrich(seed: dict, max_examples: int) -> list[dict]:
         visitability = merge_visitability(place, visitability_data)
         mention_count, examples = cell_mentions(place, cells, book_id)
         chronology_count, chronology_examples = chronology_mentions(place, chronology_path)
-        event_matches = matched_chronology_events(place, chronology_events)
+        event_matches = apply_chronology_rules(place, chronology_events, suppressions, overrides)
         cache_entry = geocode_cache.get(place["id"], {})
         match_method, result = best_osm_result(cache_entry)
         candidate = None
@@ -544,6 +607,7 @@ def write_mentions_csv(places: list[dict]) -> None:
     with MENTIONS_CSV_PATH.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(
             handle,
+            lineterminator="\n",
             fieldnames=[
                 "place_id",
                 "canonical_name",
@@ -576,6 +640,7 @@ def write_events_csv(places: list[dict]) -> None:
     with EVENTS_CSV_PATH.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(
             handle,
+            lineterminator="\n",
             fieldnames=[
                 "place_id",
                 "canonical_name",
@@ -969,6 +1034,7 @@ def write_html(catalog: dict) -> None:
       "house_museum",
       "museum_site",
       "operating_hotel_successor",
+      "operating_boathouse",
       "public_historic_cemetery",
       "public_historic_park",
       "public_state_reservation",
@@ -976,7 +1042,9 @@ def write_html(catalog: dict) -> None:
       "seasonal_house_museum",
       "seasonal_nps_site",
       "site_on_museum_grounds",
-      "state_historic_site"
+      "state_historic_site",
+      "visitor_center",
+      "historic_site_public_access_varies"
     ]);
     function visitBucket(place) {{
       const status = place.visitability?.visit_status;
@@ -1009,7 +1077,10 @@ def write_html(catalog: dict) -> None:
       museum_site: "museum site",
       site_on_museum_grounds: "museum grounds site",
       state_historic_site: "state historic site",
-      operating_hotel_successor: "operating hotel/successor"
+      operating_hotel_successor: "operating hotel/successor",
+      operating_boathouse: "operating boathouse",
+      visitor_center: "visitor center",
+      historic_site_public_access_varies: "historic site/access varies"
     }};
     const STATUS_HELP = {{
       needs_historical_map: "A modern OSM object or street name is not enough. Use period maps, archival sources, or stable historical references before accepting a precise point.",
@@ -1273,6 +1344,9 @@ def write_html(catalog: dict) -> None:
       renderList();
       renderDetails();
       updateSelectedMarker();
+      const url = new URL(window.location.href);
+      url.searchParams.set("place", id);
+      history.replaceState(null, "", url);
       if (moveMap && place) {{
         const marker = markers.get(id);
         if (marker) {{

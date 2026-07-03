@@ -5,8 +5,8 @@
   "counts": {
     "events": 87,
     "links": 89,
-    "suppressions": 30,
-    "overrides": 46
+    "suppressions": 32,
+    "overrides": 48
   },
   "events": {
     "alcott-11": [
@@ -123,14 +123,6 @@
         "label": "Fruitlands",
         "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=fruitlands",
         "source": "auto"
-      }
-    ],
-    "book-19": [
-      {
-        "place_id": "concord_lyceum",
-        "label": "Concord Town House / Concord Lyceum",
-        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
-        "source": "override"
       }
     ],
     "book-34": [
@@ -605,6 +597,15 @@
         "source": "auto"
       }
     ],
+    "thoreau-1": [
+      {
+        "place_id": "thoreau_birthplace_farm",
+        "label": "Thoreau Farm / Henry David Thoreau Birthplace",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=thoreau_birthplace_farm",
+        "source": "override",
+        "note": "Official Thoreau Farm/Wheeler-Minot Farmhouse site for Thoreau's birthplace; current house/original-lot relationship still needs an old-map note."
+      }
+    ],
     "thoreau-11": [
       {
         "place_id": "walden_pond",
@@ -693,12 +694,22 @@
         "source": "auto"
       }
     ],
+    "thoreau-34": [
+      {
+        "place_id": "thoreau_main_street_home",
+        "label": "Thoreau-Alcott House / Thoreau family Main Street home",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=thoreau_main_street_home",
+        "source": "override",
+        "note": "Late-life paper-arranging belongs to Thoreau's Main Street household, not the Transcendental Graveyard chapter setting."
+      }
+    ],
     "thoreau-35": [
       {
-        "place_id": "sleepy_hollow_cemetery_concord",
-        "label": "Sleepy Hollow Cemetery, Concord",
-        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=sleepy_hollow_cemetery_concord",
-        "source": "auto"
+        "place_id": "thoreau_main_street_home",
+        "label": "Thoreau-Alcott House / Thoreau family Main Street home",
+        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=thoreau_main_street_home",
+        "source": "override",
+        "note": "Thoreau died at the Thoreau-Alcott/Yellow House on Main Street; keep cemetery/burial references separate."
       }
     ],
     "thoreau-5": [
@@ -706,14 +717,6 @@
         "place_id": "walden_pond",
         "label": "Walden Pond",
         "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=walden_pond",
-        "source": "auto"
-      }
-    ],
-    "thoreau-7": [
-      {
-        "place_id": "concord_lyceum",
-        "label": "Concord Town House / Concord Lyceum",
-        "href": "https://rahuldave.com/thoreau_locations_osm/fuller_location_atlas.html?place=concord_lyceum",
         "source": "auto"
       }
     ]

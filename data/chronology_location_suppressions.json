@@ -21,6 +21,7 @@
     { "public_event_id": "emerson-23", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Death/eulogy event is not being treated as a cemetery-site event yet." },
     { "public_event_id": "emerson-29", "place_id": "down_house", "reason": "Emerson death event is not at Down House." },
     { "public_event_id": "sanborn-10", "place_id": "concord_lyceum", "reason": "Origin dinner belongs to Sanborn house candidate, not Lyceum." },
+    { "public_event_id": "thoreau-7", "place_id": "concord_lyceum", "reason": "This 1848 Lyceum event predates the 1851 Concord Town House at 22 Monument Square; resolve the earlier Lyceum venue separately." },
     { "public_event_id": "sanborn-19", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Election-crisis event is not a cemetery event." },
     { "public_event_id": "thoreau-18", "place_id": "concord_lyceum", "reason": "Book-borrowing event belongs to Concord library." },
     { "public_event_id": "thoreau-27", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Tree-ring observations are not cemetery-specific." },
@@ -30,7 +31,7 @@
     { "public_event_id": "thoreau-31", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Secession/illness context is not a cemetery event." },
     { "public_event_id": "thoreau-32", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Forest-succession thought event is not cemetery-specific." },
     { "public_event_id": "thoreau-33", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Milwaukee travel event is not a cemetery event." },
-    { "public_event_id": "thoreau-34", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Paper-arranging illness event is not a cemetery event." }
+    { "public_event_id": "thoreau-34", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Paper-arranging illness event is not a cemetery event." },
+    { "public_event_id": "thoreau-35", "place_id": "sleepy_hollow_cemetery_concord", "reason": "Death event belongs to Thoreau's Main Street house; keep burial/cemetery links separate unless the event explicitly concerns the grave." }
   ]
 }
-

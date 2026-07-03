@@ -56,12 +56,13 @@
       "osm_query": "22 Monument Square, Concord, Massachusetts, United States",
       "lat": 42.46024,
       "lon": -71.34947,
-      "coordinate_quality": "candidate modern building",
-      "review_status": "needs_confirmation",
-      "osm_review_status": "candidate",
-      "osm_review_note": "Use the 22 Monument Square civic address as the modern candidate; confirm the 1860 Lyceum/Town House venue relationship before accepting this OSM feature.",
+      "current_address": "Concord Town Hall, 22 Monument Square, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed modern civic building for post-1851 Lyceum/Town House events",
+      "review_status": "seeded",
+      "osm_review_status": "accepted",
+      "osm_review_note": "Use 22 Monument Square for post-1851 Concord Town House/Lyceum events. Pre-1851 Lyceum events still need a separate venue resolution.",
       "importance": "primary",
-      "historical_map_need": "Confirm the 1860 Lyceum, Town House, and Town Hall venue relationship against Concord histories and period maps.",
+      "historical_map_need": "Keep pre-1851 Concord Lyceum events separate from the 1851 Town House/Town Hall building at 22 Monument Square.",
       "web_refs": [
         {
           "label": "Discover Concord, A Walk Along Concord's American Mile",
@@ -78,26 +79,71 @@
     {
       "id": "emerson_house_concord",
       "canonical_name": "Ralph Waldo Emerson House",
-      "aliases": ["Emerson's house", "Emerson home", "Emerson family", "white frame house", "white clapboard house", "Ralph Waldo Emerson House"],
+      "aliases": ["Emerson's house", "Emerson home", "Emerson family", "white frame house", "white clapboard house", "Ralph Waldo Emerson House", "28 Cambridge Turnpike"],
       "kind": "historic-house",
-      "osm_query": "Ralph Waldo Emerson House, Concord, Massachusetts, United States",
-      "lat": 42.45952,
-      "lon": -71.34221,
-      "coordinate_quality": "modern historic site",
+      "osm_query": "28 Cambridge Turnpike, Concord, Massachusetts, United States",
+      "lat": 42.4576313,
+      "lon": -71.3433991,
+      "current_address": "Ralph Waldo Emerson House, 28 Cambridge Turnpike, Concord, MA 01742",
+      "coordinate_quality": "official house-museum address and map point",
       "review_status": "seeded",
       "importance": "primary",
-      "historical_map_need": "Verify wording when Fuller means the household rather than the physical house."
+      "historical_map_need": "Verify wording when Fuller means the household rather than the physical house.",
+      "web_refs": [
+        {
+          "label": "Ralph Waldo Emerson Memorial Association, Visit the Emerson House",
+          "url": "https://rwema.org/visit-the-emerson-house",
+          "note": "Official site gives the Emerson House address as 28 Cambridge Turnpike and provides tour information."
+        }
+      ]
     },
     {
       "id": "thoreau_main_street_home",
-      "canonical_name": "Thoreau family house on Main Street",
-      "aliases": ["mother's house on Main Street", "his mother's house on Main Street", "Main Street", "third-floor attic room", "attic study"],
+      "canonical_name": "Thoreau-Alcott House / Thoreau family Main Street home",
+      "aliases": ["Thoreau-Alcott House", "Yellow House", "yellow house", "renovated yellow house", "mother's house on Main Street", "mother's yellow house", "mother's yellow house on Main Street", "third-floor attic room", "third-story attic", "attic study", "255 Main Street"],
       "kind": "historic-house-or-site",
-      "osm_query": "Main Street, Concord, Massachusetts, United States",
-      "coordinate_quality": "unresolved historic site",
+      "osm_query": "255 Main Street, Concord, Massachusetts, United States",
+      "current_address": "255 Main Street, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current address; historical footprint needs old-map check",
       "review_status": "needs_historical_map",
       "importance": "primary",
-      "historical_map_need": "Resolve the 1860 Thoreau family residence and distinguish it from generic Main Street mentions."
+      "historical_map_need": "Confirm the nineteenth-century lot and house footprint on old Concord maps; current public sources identify 255 Main Street as the Yellow House where Thoreau lived until his death.",
+      "web_refs": [
+        {
+          "label": "Thoreau-Alcott House",
+          "url": "https://en.wikipedia.org/wiki/Thoreau%E2%80%93Alcott_House",
+          "note": "Identifies the Thoreau-Alcott House at 255 Main Street and describes Thoreau's residence there until his death."
+        },
+        {
+          "label": "Architectural Digest, Henry David Thoreau's Yellow House Hits the Market",
+          "url": "https://www.architecturaldigest.com/story/henry-david-thoreau-yellow-house-hits-the-market",
+          "note": "Corroborates the Yellow House at 255 Main Street, Thoreau's attic, and later Alcott ownership."
+        }
+      ]
+    },
+    {
+      "id": "thoreau_birthplace_farm",
+      "canonical_name": "Thoreau Farm / Henry David Thoreau Birthplace",
+      "aliases": ["Thoreau Farm", "Thoreau's Birthplace", "Henry David Thoreau Birthplace", "Wheeler-Minot Farmhouse", "341 Virginia Road"],
+      "kind": "historic-house",
+      "osm_query": "341 Virginia Road, Concord, Massachusetts, United States",
+      "current_address": "Thoreau Farm, 341 Virginia Road, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current address; original nearby lot history needs source detail",
+      "review_status": "needs_historical_map",
+      "importance": "primary",
+      "historical_map_need": "Confirm the farmhouse move/original lot relationship before treating the present 341 Virginia Road point as the exact 1817 birth location.",
+      "web_refs": [
+        {
+          "label": "Thoreau Farm",
+          "url": "https://thoreaufarm.org/",
+          "note": "Official site for Thoreau's birthplace; gives 341 Virginia Road and public tour/grounds information."
+        },
+        {
+          "label": "Wheeler-Minot Farmhouse",
+          "url": "https://en.wikipedia.org/wiki/Wheeler-Minot_Farmhouse",
+          "note": "Identifies the Wheeler-Minot Farmhouse/Thoreau Farm as Henry David Thoreau's birthplace at 341 Virginia Road."
+        }
+      ]
     },
     {
       "id": "concord_train_station",
@@ -126,41 +172,82 @@
     {
       "id": "old_hill_burying_ground_concord",
       "canonical_name": "Old Hill Burying Ground / Puritan-era hillside cemetery",
-      "aliases": ["hillside cemetery", "Puritan era", "Puritan-era", "Old Hill Burying Ground"],
+      "aliases": ["hillside cemetery", "Puritan era", "Puritan-era", "Old Hill Burying Ground", "2-12 Monument Square"],
       "kind": "cemetery",
-      "osm_query": "Old Hill Burying Ground, Concord, Massachusetts, United States",
+      "osm_query": "Old Hill Burying Ground, 2-12 Monument Square, Concord, Massachusetts, United States",
       "lat": 42.46062,
       "lon": -71.35052,
+      "current_address": "Old Hill Burying Ground, 2-12 Monument Square, Concord, MA 01742",
       "coordinate_quality": "candidate modern historic site",
       "review_status": "needs_confirmation",
+      "osm_review_status": "candidate",
+      "osm_review_note": "Nominatim did not return a named Old Hill Burying Ground object for the visit-guide address; use the curated coordinates until an OSM object or cemetery map is confirmed.",
       "importance": "secondary",
-      "historical_map_need": "Confirm that Fuller's hillside cemetery near Lexington Road is Old Hill Burying Ground."
+      "historical_map_need": "Confirm that Fuller's hillside cemetery near Lexington Road is Old Hill Burying Ground.",
+      "web_refs": [
+        {
+          "label": "Freedom's Way, Old Hill Burying Ground",
+          "url": "https://freedomsway.org/place/old-hill-burying-ground/",
+          "note": "Current public-history source for Old Hill Burying Ground."
+        },
+        {
+          "label": "Discover Concord, Historic Concord: Plan Your Visit - Summer 2026",
+          "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+          "note": "Visit guide lists Old Hill Burying Ground at 2-12 Monument Square."
+        }
+      ]
     },
     {
       "id": "sleepy_hollow_cemetery_concord",
       "canonical_name": "Sleepy Hollow Cemetery, Concord",
-      "aliases": ["Sleepy Hollow Cemetery", "Authors' Ridge", "Transcendental Graveyard"],
+      "aliases": ["Sleepy Hollow Cemetery", "Authors' Ridge", "Authors Ridge", "Transcendental Graveyard", "120 Bedford Street"],
       "kind": "cemetery",
       "osm_query": "Sleepy Hollow Cemetery, Concord, Massachusetts, United States",
       "lat": 42.46395,
       "lon": -71.34491,
+      "current_address": "Sleepy Hollow Cemetery, 120 Bedford Street, Concord, MA 01742",
       "coordinate_quality": "modern historic site",
       "review_status": "seeded",
       "importance": "primary",
-      "historical_map_need": "Use cemetery maps for individual graves or Authors' Ridge references."
+      "historical_map_need": "Use cemetery maps for individual graves or Authors' Ridge references.",
+      "web_refs": [
+        {
+          "label": "Town of Concord, Sleepy Hollow Cemetery",
+          "url": "https://concordma.gov/1956/Sleepy-Hollow-Cemetery",
+          "note": "Official cemetery page."
+        },
+        {
+          "label": "Discover Concord, Historic Concord: Plan Your Visit - Summer 2026",
+          "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+          "note": "Visit guide lists Sleepy Hollow Cemetery, including Authors Ridge, at 120 Bedford Street."
+        }
+      ]
     },
     {
       "id": "walden_pond",
       "canonical_name": "Walden Pond",
-      "aliases": ["Walden Pond", "Walden"],
+      "aliases": ["Walden Pond", "Walden", "Walden Pond State Reservation", "915 Walden Street"],
       "kind": "natural-feature",
       "osm_query": "Walden Pond, Concord, Massachusetts, United States",
       "lat": 42.43893,
       "lon": -71.34062,
+      "current_address": "Walden Pond State Reservation visitor entrance, 915 Walden Street, Concord, MA 01742",
       "coordinate_quality": "modern natural feature",
       "review_status": "seeded",
       "importance": "primary",
-      "historical_map_need": "Use specific cabin, shoreline, or woodlot anchors when the passage is not about the pond as a whole."
+      "historical_map_need": "Use specific cabin, shoreline, or woodlot anchors when the passage is not about the pond as a whole.",
+      "web_refs": [
+        {
+          "label": "Walden Pond State Reservation",
+          "url": "https://www.mass.gov/locations/walden-pond-state-reservation",
+          "note": "Official Massachusetts state reservation page for visitor information."
+        },
+        {
+          "label": "Discover Concord, Historic Concord: Plan Your Visit - Summer 2026",
+          "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+          "note": "Visit guide lists Walden Pond State Reservation at 915 Walden Street."
+        }
+      ]
     },
     {
       "id": "white_pond",
@@ -198,10 +285,23 @@
       "osm_query": "Old North Bridge, Concord, Massachusetts, United States",
       "lat": 42.4690379,
       "lon": -71.3506223,
+      "current_address": "Old North Bridge, Minute Man National Historical Park, Concord, MA 01742",
       "coordinate_quality": "modern historic site",
       "review_status": "seeded",
       "importance": "secondary",
-      "historical_map_need": "Used as a draft 1852-map control point; confirm exact bridge/monument feature before using for high-precision warping."
+      "historical_map_need": "Used as a draft 1852-map control point; confirm exact bridge/monument feature before using for high-precision warping.",
+      "web_refs": [
+        {
+          "label": "Minute Man National Historical Park",
+          "url": "https://www.nps.gov/mima/",
+          "note": "Official NPS site for Old North Bridge and related visitor centers."
+        },
+        {
+          "label": "Discover Concord, Historic Concord: Plan Your Visit - Summer 2026",
+          "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
+          "note": "Visit guide lists the North Bridge Visitor Center at 174 Liberty Street."
+        }
+      ]
     },
     {
       "id": "emerson_woodlot_walden",
@@ -217,28 +317,227 @@
     {
       "id": "orchard_house",
       "canonical_name": "Orchard House",
-      "aliases": ["Orchard House", "Alcott home", "Alcott family home"],
+      "aliases": ["Orchard House", "Alcott home", "Alcott family home", "399 Lexington Road"],
       "kind": "historic-house",
       "osm_query": "Orchard House, Concord, Massachusetts, United States",
       "lat": 42.45964,
       "lon": -71.34287,
+      "current_address": "Louisa May Alcott's Orchard House, 399 Lexington Road, Concord, MA 01742",
       "coordinate_quality": "modern historic site",
       "review_status": "seeded",
       "importance": "secondary",
-      "historical_map_need": "Check whether a passage means Orchard House specifically or the Alcott household more generally."
+      "historical_map_need": "Check whether a passage means Orchard House specifically or the Alcott household more generally.",
+      "web_refs": [
+        {
+          "label": "Louisa May Alcott's Orchard House",
+          "url": "https://louisamayalcott.org/",
+          "note": "Official Orchard House site; the Discover Concord visit guide lists 399 Lexington Road."
+        }
+      ]
     },
     {
       "id": "the_wayside_concord",
       "canonical_name": "The Wayside",
-      "aliases": ["The Wayside", "old farmhouse next to the Alcott home", "old farmhouse"],
+      "aliases": ["The Wayside", "old farmhouse next to the Alcott home", "old farmhouse", "455 Lexington Road"],
       "kind": "historic-house",
       "osm_query": "The Wayside, Concord, Massachusetts, United States",
       "lat": 42.45979,
       "lon": -71.34390,
+      "current_address": "The Wayside, 455 Lexington Road, Concord, MA 01742",
       "coordinate_quality": "modern historic site",
       "review_status": "seeded",
       "importance": "secondary",
-      "historical_map_need": "Confirm household naming by year: Hillside, Wayside, or Hawthorne residence."
+      "historical_map_need": "Confirm household naming by year: Hillside, Wayside, or Hawthorne residence.",
+      "web_refs": [
+        {
+          "label": "The Wayside, Minute Man National Historical Park",
+          "url": "https://www.nps.gov/mima/learn/historyculture/thewayside.htm",
+          "note": "Official NPS page for The Wayside at 455 Lexington Road."
+        }
+      ]
+    },
+    {
+      "id": "concord_museum",
+      "canonical_name": "Concord Museum",
+      "aliases": ["Concord Museum", "53 Cambridge Turnpike"],
+      "kind": "museum",
+      "osm_query": "Concord Museum, Concord, Massachusetts, United States",
+      "lat": 42.4576843,
+      "lon": -71.3417122,
+      "current_address": "Concord Museum, 53 Cambridge Turnpike, Concord, MA 01742",
+      "coordinate_quality": "official current address with OSM named-site candidate",
+      "review_status": "seeded",
+      "osm_review_status": "candidate",
+      "osm_review_note": "Use official/Discover address 53 Cambridge Turnpike for visitors; the named OSM Concord Museum relation currently reports 200 Lexington Road.",
+      "importance": "tertiary",
+      "historical_map_need": "Use as a visitor and collection site unless a passage specifically identifies a historical scene at the museum.",
+      "web_refs": [
+        {
+          "label": "Concord Museum",
+          "url": "https://concordmuseum.org/",
+          "note": "Official Concord Museum site; Discover Concord lists 53 Cambridge Turnpike."
+        }
+      ]
+    },
+    {
+      "id": "concord_visitor_center",
+      "canonical_name": "Concord Visitor Center",
+      "aliases": ["Concord Visitor Center", "58 Main Street"],
+      "kind": "visitor-center",
+      "osm_query": "58 Main Street, Concord, Massachusetts, United States",
+      "current_address": "Concord Visitor Center, 58 Main Street, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current address",
+      "review_status": "seeded",
+      "importance": "tertiary",
+      "historical_map_need": "Visitor logistics site; do not treat as a nineteenth-century event location without separate evidence.",
+      "web_refs": [
+        {
+          "label": "Visit Concord",
+          "url": "https://visitconcord.org/",
+          "note": "Official visitor site; Discover Concord lists the visitor center at 58 Main Street."
+        }
+      ]
+    },
+    {
+      "id": "minute_man_visitor_center",
+      "canonical_name": "Minute Man Visitor Center",
+      "aliases": ["Minute Man Visitor Center", "Minute Man National Historical Park visitor center", "250 North Great Road", "250 N. Great Road"],
+      "kind": "visitor-center",
+      "osm_query": "250 North Great Road, Lincoln, Massachusetts, United States",
+      "current_address": "Minute Man Visitor Center, 250 North Great Road, Lincoln, MA 01773",
+      "coordinate_quality": "source-confirmed current address",
+      "review_status": "seeded",
+      "osm_review_status": "candidate",
+      "osm_review_note": "Nominatim resolves the address but not a named Minute Man Visitor Center feature.",
+      "importance": "tertiary",
+      "historical_map_need": "Visitor logistics site for Minute Man National Historical Park; keep separate from literary or event locations.",
+      "web_refs": [
+        {
+          "label": "NPS, Minute Man Visitor Center",
+          "url": "https://www.nps.gov/mima/planyourvisit/minute-man-visitor-center.htm",
+          "note": "Official NPS visitor-center page."
+        }
+      ]
+    },
+    {
+      "id": "north_bridge_visitor_center",
+      "canonical_name": "North Bridge Visitor Center",
+      "aliases": ["North Bridge Visitor Center", "The North Bridge & Visitor Center", "174 Liberty Street"],
+      "kind": "visitor-center",
+      "osm_query": "North Bridge Visitor Center, 174 Liberty Street, Concord, Massachusetts, United States",
+      "current_address": "North Bridge Visitor Center, 174 Liberty Street, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current address",
+      "review_status": "seeded",
+      "importance": "tertiary",
+      "historical_map_need": "Visitor logistics site; keep separate from the Old North Bridge control point and historical bridge scene.",
+      "web_refs": [
+        {
+          "label": "NPS, North Bridge Visitor Center",
+          "url": "https://www.nps.gov/mima/planyourvisit/north-bridge-visitor-center.htm",
+          "note": "Official NPS visitor-center page."
+        }
+      ]
+    },
+    {
+      "id": "old_manse",
+      "canonical_name": "The Old Manse",
+      "aliases": ["The Old Manse", "Old Manse", "269 Monument Street"],
+      "kind": "historic-house",
+      "osm_query": "269 Monument Street, Concord, Massachusetts, United States",
+      "current_address": "The Old Manse, 269 Monument Street, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current address",
+      "review_status": "seeded",
+      "importance": "secondary",
+      "historical_map_need": "Use old maps only if a passage needs a nineteenth-century household boundary or landscape detail rather than the surviving house site.",
+      "web_refs": [
+        {
+          "label": "The Trustees, The Old Manse",
+          "url": "https://thetrustees.org/place/the-old-manse/",
+          "note": "Official Trustees page; Discover Concord lists 269 Monument Street."
+        }
+      ]
+    },
+    {
+      "id": "robbins_house",
+      "canonical_name": "The Robbins House",
+      "aliases": ["The Robbins House", "Robbins House", "320 Monument Street"],
+      "kind": "historic-house",
+      "osm_query": "320 Monument Street, Concord, Massachusetts, United States",
+      "current_address": "The Robbins House, 320 Monument Street, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current address",
+      "review_status": "seeded",
+      "osm_review_status": "candidate",
+      "osm_review_note": "Nominatim resolves the address but not a named Robbins House feature.",
+      "importance": "secondary",
+      "historical_map_need": "Confirm period household/site context when linking abolition or Black Concord chronology events to this house.",
+      "web_refs": [
+        {
+          "label": "The Robbins House",
+          "url": "https://www.robbinshouse.org/",
+          "note": "Official Robbins House site; Discover Concord lists 320 Monument Street."
+        }
+      ]
+    },
+    {
+      "id": "south_bridge_boat_house",
+      "canonical_name": "South Bridge Boat House",
+      "aliases": ["South Bridge Boat House", "South Bridge Boathouse", "496 Main Street"],
+      "kind": "visitor-logistics",
+      "osm_query": "South Bridge Boat House, 496 Main Street, Concord, Massachusetts, United States",
+      "current_address": "South Bridge Boat House, 496 Main Street, Concord, MA 01742",
+      "coordinate_quality": "official current address; Discover Concord print guide gives conflicting 469 Main Street",
+      "review_status": "needs_confirmation",
+      "importance": "tertiary",
+      "historical_map_need": "Modern boating/logistics site; confirm whether it should be included only as a trip-planning support point.",
+      "web_refs": [
+        {
+          "label": "South Bridge Boat House",
+          "url": "https://www.concordboathouse.com/",
+          "note": "Official site gives 496 Main Street and phone 978-369-9438; Discover Concord's photo/guide lead lists 469 Main Street."
+        }
+      ]
+    },
+    {
+      "id": "south_burying_ground_concord",
+      "canonical_name": "South Burying Ground, Concord",
+      "aliases": ["South Burying Ground", "Main Street and Keyes Road"],
+      "kind": "cemetery",
+      "osm_query": "South Burying Ground, Main Street and Keyes Road, Concord, Massachusetts, United States",
+      "current_address": "South Burying Ground, Main Street and Keyes Road, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current intersection",
+      "review_status": "seeded",
+      "osm_review_status": "candidate",
+      "osm_review_note": "Nominatim did not return a named South Burying Ground object for the official intersection; confirm a point from town cemetery maps before accepting a house-level marker.",
+      "importance": "secondary",
+      "historical_map_need": "Use cemetery maps or town records for individual burial references.",
+      "web_refs": [
+        {
+          "label": "Town of Concord, South Burying Ground",
+          "url": "https://concordma.gov/1958/South-Burying-Ground",
+          "note": "Official town cemetery page; Discover Concord lists Main Street and Keyes Road."
+        }
+      ]
+    },
+    {
+      "id": "wright_tavern",
+      "canonical_name": "Wright Tavern",
+      "aliases": ["Wright Tavern", "Wright's Tavern", "2 Lexington Road"],
+      "kind": "historic-building",
+      "osm_query": "Wright Tavern, Concord, Massachusetts, United States",
+      "current_address": "Wright Tavern, 2 Lexington Road, Concord, MA 01742",
+      "coordinate_quality": "source-confirmed current address",
+      "review_status": "seeded",
+      "osm_review_status": "candidate",
+      "osm_review_note": "The named OSM feature returns Wright Tavern at 1 Main Street; official and visit-guide visitor address is 2 Lexington Road.",
+      "importance": "secondary",
+      "historical_map_need": "Use old maps only when a passage needs the eighteenth- or nineteenth-century tavern context rather than the surviving address.",
+      "web_refs": [
+        {
+          "label": "Wright Tavern",
+          "url": "https://www.wrighttavern.org/",
+          "note": "Official Wright Tavern site; Discover Concord lists 2 Lexington Road."
+        }
+      ]
     },
     {
       "id": "assabet_river",
@@ -438,13 +737,21 @@
     {
       "id": "concord_library",
       "canonical_name": "Concord library",
-      "aliases": ["Concord library", "library book"],
+      "aliases": ["Concord library", "Concord Free Public Library", "library book", "129 Main Street"],
       "kind": "historic-library",
       "osm_query": "Concord Free Public Library Concord Massachusetts",
+      "current_address": "Concord Free Public Library, 129 Main Street, Concord, MA 01742",
       "coordinate_quality": "unresolved 1860 library site",
       "review_status": "needs_historical_map",
       "importance": "secondary",
-      "historical_map_need": "Resolve where the Concord library copy of Origin was held in 1860; do not assume the later public library building."
+      "historical_map_need": "Resolve where the Concord library copy of Origin was held in 1860; do not assume the later public library building.",
+      "web_refs": [
+        {
+          "label": "Concord Free Public Library",
+          "url": "https://concordlibrary.org/",
+          "note": "Official current library and Special Collections site at 129 Main Street."
+        }
+      ]
     },
     {
       "id": "sanborn_private_school",

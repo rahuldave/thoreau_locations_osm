@@ -18,7 +18,7 @@
     {
       "id": "cp_concord_village_center",
       "place_id": "concord_lyceum",
-      "label": "Concord village center / Town House vicinity",
+      "label": "Concord Town House / Town Hall vicinity",
       "old_map_pixel": {
         "x": 1115,
         "y": 972,
@@ -28,8 +28,8 @@
         "lat": 42.46024,
         "lon": -71.34968
       },
-      "modern_source": "Existing atlas Concord Town House candidate; still needs archival confirmation for Lyceum/Town House identity.",
-      "note": "Useful town-center anchor, but refine against the village inset or a named building before using for house-level locations."
+      "modern_source": "Town House/Town Hall address at 22 Monument Square is source-confirmed for post-1851 Lyceum/Town House events.",
+      "note": "Useful town-center anchor, but refine against the village inset or a named building before using for house-level locations. Do not use this point for pre-1851 Lyceum events without a separate venue source."
     },
     {
       "id": "cp_walden_pond",

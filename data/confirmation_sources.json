@@ -62,7 +62,43 @@
       "date": "2026-06-30",
       "url": "https://www.discoverconcordma.com/articles/772-historic-concord-plan-your-visit-summer-2026",
       "why_it_matters": "Gives current addresses/contact points for visitable Concord sites such as the library, museum, North Bridge, Old Hill, Old Manse, Emerson House, Sleepy Hollow, Thoreau Farm, Walden Pond, Wayside, and Wright Tavern.",
-      "place_scope": ["concord_library", "old_north_bridge", "old_hill_burying_ground_concord", "emerson_house_concord", "sleepy_hollow_cemetery_concord", "walden_pond", "the_wayside_concord"]
+      "place_scope": ["concord_library", "concord_museum", "concord_visitor_center", "minute_man_visitor_center", "old_north_bridge", "north_bridge_visitor_center", "old_hill_burying_ground_concord", "old_manse", "emerson_house_concord", "robbins_house", "sleepy_hollow_cemetery_concord", "south_bridge_boat_house", "south_burying_ground_concord", "thoreau_birthplace_farm", "walden_pond", "the_wayside_concord", "wright_tavern"]
+    },
+    {
+      "id": "rwema-emerson-house-2026",
+      "kind": "official-site",
+      "title": "Visit the Emerson House in Concord, MA",
+      "date": "2026-07-03",
+      "url": "https://rwema.org/visit-the-emerson-house",
+      "why_it_matters": "Official Emerson House visitor page gives the current address as 28 Cambridge Turnpike and publishes public tour information.",
+      "place_scope": ["emerson_house_concord"]
+    },
+    {
+      "id": "thoreau-farm-official-2026",
+      "kind": "official-site",
+      "title": "Thoreau Farm",
+      "date": "2026-07-03",
+      "url": "https://thoreaufarm.org/",
+      "why_it_matters": "Official Thoreau birthplace site gives the current address as 341 Virginia Road and explains public tour/grounds access.",
+      "place_scope": ["thoreau_birthplace_farm"]
+    },
+    {
+      "id": "architectural-digest-thoreau-yellow-house-2019",
+      "kind": "architecture-history",
+      "title": "Henry David Thoreau's Yellow House Hits the Market",
+      "date": "2019-08-06",
+      "url": "https://www.architecturaldigest.com/story/henry-david-thoreau-yellow-house-hits-the-market",
+      "why_it_matters": "Corroborates the Yellow House/Thoreau-Alcott House at 255 Main Street, Thoreau's attic room, and later Alcott ownership.",
+      "place_scope": ["thoreau_main_street_home"]
+    },
+    {
+      "id": "south-bridge-boathouse-official-2026",
+      "kind": "official-site",
+      "title": "South Bridge Boat House",
+      "date": "2026-07-03",
+      "url": "https://www.concordboathouse.com/",
+      "why_it_matters": "Official South Bridge Boat House site gives the current address as 496 Main Street, which conflicts with the Discover Concord print/photo listing at 469 Main Street.",
+      "place_scope": ["south_bridge_boat_house"]
     },
     {
       "id": "caldwell-325-main-sanborn-2025",
