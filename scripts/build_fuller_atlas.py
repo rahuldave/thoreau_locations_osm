@@ -743,6 +743,14 @@ def write_html(catalog: dict) -> None:
       font-size: 24px;
       letter-spacing: 0;
     }}
+    h1 a {{
+      color: inherit;
+      text-decoration: none;
+    }}
+    h1 a:hover, h1 a:focus-visible {{
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }}
     .subtle {{ color: var(--muted); }}
     .stats {{
       display: flex;
@@ -932,7 +940,7 @@ def write_html(catalog: dict) -> None:
 <body>
   <header>
     <div>
-      <h1>Fuller Location Atlas</h1>
+      <h1><a href="index.html">Fuller Location Atlas</a></h1>
       <div class="subtle">The Book That Changed America - addressable site review queue for OSM, web, visit, and old-map confirmation</div>
     </div>
     <div class="stats" id="stats"></div>
@@ -1413,6 +1421,8 @@ def write_old_map_html(catalog: dict) -> None:
       background: #f6f2ea;
     }}
     h1 {{ margin: 0 0 4px; font-size: 23px; letter-spacing: 0; }}
+    h1 a {{ color: inherit; text-decoration: none; }}
+    h1 a:hover, h1 a:focus-visible {{ text-decoration: underline; text-underline-offset: 3px; }}
     a {{ color: var(--blue); font-weight: 650; text-decoration: none; }}
     .subtle {{ color: var(--muted); }}
     main {{
@@ -1491,7 +1501,7 @@ def write_old_map_html(catalog: dict) -> None:
 <body>
   <header>
     <div>
-      <h1>1852 Concord Old-Map Anchors</h1>
+      <h1><a href="index.html">1852 Concord Old-Map Anchors</a></h1>
       <div class="subtle">Draft control points on H. F. Walling's 1852 Concord map. This is not a finished geo-rectification.</div>
     </div>
     <div><a id="atlas-back" href="fuller_location_atlas.html">Back to atlas</a></div>
